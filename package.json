@@ -1,0 +1,95 @@
+{
+	"name": "@favware/npm-deprecate",
+	"version": "1.0.0",
+	"description": "Programmatically deprecate your NPM published packages",
+	"author": "@favware",
+	"license": "MIT",
+	"type": "module",
+	"main": "dist/cli.js",
+	"bin": {
+		"nd": "./dist/cli.js",
+		"npm-deprecate": "./dist/cli.js"
+	},
+	"imports": {
+		"#commands/*": "./dist/commands/*.js",
+		"#lib/*": "./dist/lib/*.js",
+		"#root/*": "./dist/*.js"
+	},
+	"sideEffects": "false",
+	"scripts": {
+		"lint": "eslint src --ext ts --fix",
+		"debug": "node . -v --dist .\\build\\",
+		"format": "prettier --write src/**/*.ts",
+		"update": "yarn upgrade-interactive --latest",
+		"clean": "node scripts/clean.mjs",
+		"build": "tsc -b src",
+		"watch": "tsc -b src -w",
+		"sversion": "standard-version",
+		"prepare": "husky install .github/husky"
+	},
+	"dependencies": {
+		"@sapphire/fetch": "next",
+		"@sapphire/utilities": "^2.0.1",
+		"colorette": "^1.2.2",
+		"commander": "^8.1.0",
+		"js-yaml": "^4.1.0",
+		"micromatch": "^4.0.4",
+		"npm-package-arg": "^8.1.5",
+		"npm-registry-fetch": "^11.0.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^12.1.4",
+		"@commitlint/config-conventional": "^12.1.4",
+		"@sapphire/eslint-config": "^3.2.3",
+		"@sapphire/prettier-config": "^1.1.4",
+		"@sapphire/ts-config": "^2.3.2",
+		"@types/js-yaml": "^4.0.3",
+		"@types/micromatch": "^4",
+		"@types/node": "^15.14.0",
+		"@types/node-fetch": "^2",
+		"@types/npm-package-arg": "^6.1.1",
+		"@types/npm-registry-fetch": "^8.0.1",
+		"@vercel/ncc": "^0.29.2",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^7.32.0",
+		"husky": "^6.0.0",
+		"lint-staged": "^11.0.1",
+		"prettier": "^2.3.2",
+		"pretty-quick": "^3.1.1",
+		"standard-version": "^9.3.1",
+		"typescript": "^4.3.5"
+	},
+	"engines": {
+		"node": ">=16",
+		"npm": ">=7"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/favware/npm-deprecate.git"
+	},
+	"bugs": {
+		"url": "https://github.com/favware/npm-deprecate/issues"
+	},
+	"homepage": "https://github.com/favware/npm-deprecate",
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"lint-staged": {
+		"*.{mjs,js,ts}": "eslint --fix --ext mjs,js,ts"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"eslintConfig": {
+		"extends": "@sapphire"
+	},
+	"prettier": "@sapphire/prettier-config",
+	"packageManager": "yarn@3.0.1"
+}
