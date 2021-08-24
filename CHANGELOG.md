@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/favware/npm-deprecate/compare/v1.0.0...v1.0.1) (2021-08-24)
+
+### Bug Fixes
+
+-   fixed CLI throwing an error when no versions are deprecated ([15134b8](https://github.com/favware/npm-deprecate/commit/15134b8f116219a33898bde89fdcd9d68a1cc85d))
+
 ## 1.0.0 (2021-08-24)
 
 ### Features
