@@ -2,7 +2,7 @@
 	"$schema": "http://json-schema.org/draft-04/schema#",
 	"type": "object",
 	"properties": {
-		"nameGlob": {
+		"name": {
 			"description": "A glob pattern that will determine which packages are deprecated. Anything that passes [Micromatch](https://www.npmjs.com/package/micromatch) will work here. For example set `*dev*` to match `13.2.0-dev.123a`.",
 			"type": "string",
 			"default": ""
@@ -17,7 +17,7 @@
 			"type": "string",
 			"default": "This version has been automatically deprecated by @favware/npm-deprecate. Please use a newer version."
 		},
-		"packages": {
+		"package": {
 			"description": "The packages that should be deprecated",
 			"type": "array",
 			"items": {

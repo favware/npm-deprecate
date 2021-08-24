@@ -105,20 +105,20 @@ validation. To do so, add the following to your config file:
 ```json
 {
 	"$schema": "https://raw.githubusercontent.com/favware/npm-deprecate/main/assets/npm-deprecate.schema.json",
-	"nameGlob": "*next*",
+	"name": "*next*",
 	"deprecateDistTag": false,
 	"verbose": true,
-	"packages": ["@favware/rollup-type-bundler", "@favware/npm-deprecate"]
+	"package": ["@favware/rollup-type-bundler", "@favware/npm-deprecate"]
 }
 ```
 
 **Example YAML file**:
 
 ```yaml
-nameGlob: '*next*'
+name: '*next*'
 deprecateDistTag: false
 verbose: true
-packages:
+package:
     - '@favware/rollup-type-bundler'
     - '@favware/npm-deprecate'
 ```
