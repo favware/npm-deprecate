@@ -5,6 +5,7 @@
 **Programmatically deprecate your NPM published packages**
 
 [![GitHub](https://img.shields.io/github/license/favware/npm-deprecate)](https://github.com/favware/npm-deprecate/blob/main/LICENSE)
+[![npm](https://img.shields.io/npm/v/@favware/npm-deprecate?color=crimson&logo=npm)](https://www.npmjs.com/package/@favware/npm-deprecate)
 [![Depfu](https://badges.depfu.com/badges/ad765f084b44ddebe2eeac4f98aee3f7/count.svg)](https://depfu.com/github/favware/npm-deprecate?project_id=30679)
 
 [![Support Server](https://discord.com/api/guilds/512303595966824458/embed.png?style=banner2)](https://join.favware.tech)
