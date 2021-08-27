@@ -37,14 +37,14 @@ npm install -g @favware/npm-deprecate
 Then call the script with `npm-deprecate` or `nd`:
 
 ```sh
-npm-deprecate --dist ./dist # Add any other flags or use --help
-nd --dist ./dist # Add any other flags or use --help
+npm-deprecate --name "*next*" --package "@favware/npm-deprecate" # Add any other flags or use --help
+nd --name "*next*" --package "@favware/npm-deprecate" # Add any other flags or use --help
 ```
 
 Alternatively you can call the CLI directly with `npx`:
 
 ```sh
-npx @favware/npm-deprecate --dist ./dist # Add any other flags or use --help
+npx @favware/npm-deprecate --name "*next*" --package "@favware/npm-deprecate" # Add any other flags or use --help
 ```
 
 ## Usage
@@ -84,11 +84,11 @@ suffixed with `.json`, `.yaml`, or `.yml`.
 
 ### Config file fields
 
--   `--name` maps to `nameGlob`
+-   `--name` maps to `name`
 -   `--deprecate-dist-tag` maps to `deprecateDistTag`
 -   `--verbose` maps to `verbose`
 -   `--message` maps to `message`
--   `--package` maps to `packages`
+-   `--package` maps to `package`
 
 When using `.npm-deprecaterc` or `.npm-deprecaterc.json` as
 your config file you can also use the JSON schema to get schema
@@ -134,34 +134,37 @@ This library has opinionated defaults for its options. These are as follows:
 ### Using this in a GitHub Workflow
 
 ```yaml
+
 name: NPM Auto Deprecate
 
 on:
-    schedule:
-        - cron: '0 0 * * *'
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
-    auto-deprecate:
-        name: NPM Auto Deprecate
-        runs-on: ubuntu-latest
-        steps:
-            - name: Use Node.js v16
-              uses: actions/setup-node@v2
-              with:
-                  node-version: 16
-            - name: Restore CI Cache
-              uses: actions/cache@v2.1.6
-              id: cache-restore
-              with:
-                  path: node_modules
-                  key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
-            - name: Install Dependencies if Cache Miss
-              if: ${{ !steps.cache-restore.outputs.cache-hit }}
-              run: yarn --frozen-lockfile
-            - name: Deprecate versions
-              run: yarn @favware/npm-deprecate --name "*pr-*" --package "@sapphire/utilities"
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+  auto-deprecate:
+    name: NPM Auto Deprecate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js v16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+      - name: Restore CI Cache
+        uses: actions/cache@v2.1.6
+        id: cache-restore
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+      - name: Install Dependencies if Cache Miss
+        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+        run: yarn --frozen-lockfile
+      - name: Deprecate versions
+        run: yarn npm-deprecate
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 ```
 
 ## Buy us some doughnuts
