@@ -16,7 +16,6 @@
 		"#root/*": "./dist/*.js"
 	},
 	"sideEffects": "false",
-	"private": false,
 	"files": [
 		"dist",
 		"!dist/*.tsbuildinfo",
