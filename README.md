@@ -6,7 +6,6 @@
 
 [![GitHub](https://img.shields.io/github/license/favware/npm-deprecate)](https://github.com/favware/npm-deprecate/blob/main/LICENSE)
 [![npm](https://img.shields.io/npm/v/@favware/npm-deprecate?color=crimson&logo=npm)](https://www.npmjs.com/package/@favware/npm-deprecate)
-[![Depfu](https://badges.depfu.com/badges/ad765f084b44ddebe2eeac4f98aee3f7/count.svg)](https://depfu.com/github/favware/npm-deprecate?project_id=30679)
 
 [![Support Server](https://discord.com/api/guilds/512303595966824458/embed.png?style=banner2)](https://join.favware.tech)
 
@@ -134,37 +133,36 @@ This library has opinionated defaults for its options. These are as follows:
 ### Using this in a GitHub Workflow
 
 ```yaml
-
 name: NPM Auto Deprecate
 
 on:
-  schedule:
-    - cron: '0 0 * * *'
+    schedule:
+        - cron: '0 0 * * *'
 
 jobs:
-  auto-deprecate:
-    name: NPM Auto Deprecate
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v2
-      - name: Use Node.js v16
-        uses: actions/setup-node@v2
-        with:
-          node-version: 16
-      - name: Restore CI Cache
-        uses: actions/cache@v2.1.6
-        id: cache-restore
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies if Cache Miss
-        if: ${{ !steps.cache-restore.outputs.cache-hit }}
-        run: yarn --frozen-lockfile
-      - name: Deprecate versions
-        run: yarn npm-deprecate
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+    auto-deprecate:
+        name: NPM Auto Deprecate
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout Project
+              uses: actions/checkout@v2
+            - name: Use Node.js v16
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 16
+            - name: Restore CI Cache
+              uses: actions/cache@v2.1.6
+              id: cache-restore
+              with:
+                  path: node_modules
+                  key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+            - name: Install Dependencies if Cache Miss
+              if: ${{ !steps.cache-restore.outputs.cache-hit }}
+              run: yarn --frozen-lockfile
+            - name: Deprecate versions
+              run: yarn npm-deprecate
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 ```
 
 ## Buy us some doughnuts
