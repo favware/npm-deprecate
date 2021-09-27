@@ -289,7 +289,7 @@ __metadata:
     "@types/node-fetch": ^2
     "@types/npm-package-arg": ^6.1.1
     "@types/npm-registry-fetch": ^8.0.2
-    "@vercel/ncc": ^0.29.2
+    "@vercel/ncc": ^0.31.1
     colorette: ^1.2.2
     commander: ^8.1.0
     cz-conventional-changelog: ^3.3.0
@@ -646,14 +646,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@vercel/ncc@npm:^0.29.2":
-  version: 0.29.2
-  resolution: "@vercel/ncc@npm:0.29.2"
+"@vercel/ncc@npm:^0.31.1":
+  version: 0.31.1
+  resolution: "@vercel/ncc@npm:0.31.1"
   dependencies:
     node-gyp: latest
   bin:
     ncc: dist/ncc/cli.js
-  checksum: 08491dbaffab4cd9d486220f33995a52ecf719754027f14abc1a002c63dbab28c16fc3e52a310727c4d3a9b64286177b98501511944d27e2501396c28ad89b71
+  checksum: 296151a9e67b211b265db11bbbb3be6690833a890629da07d58655d916aa6bd6319b508d14fb2f0d027f59cdf8eb5b76e352ac1d2c77f5d106b940a9d144962a
   languageName: node
   linkType: hard
 
