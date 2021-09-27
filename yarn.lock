@@ -288,7 +288,7 @@ __metadata:
     "@types/node": ^15.14.0
     "@types/node-fetch": ^2
     "@types/npm-package-arg": ^6.1.1
-    "@types/npm-registry-fetch": ^8.0.1
+    "@types/npm-registry-fetch": ^8.0.2
     "@vercel/ncc": ^0.29.2
     colorette: ^1.2.2
     commander: ^8.1.0
@@ -473,7 +473,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node-fetch@npm:*, @types/node-fetch@npm:^2":
+"@types/node-fetch@npm:^2, @types/node-fetch@npm:^2.5.12":
   version: 2.5.12
   resolution: "@types/node-fetch@npm:2.5.12"
   dependencies:
@@ -511,16 +511,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/npm-registry-fetch@npm:^8.0.1":
-  version: 8.0.1
-  resolution: "@types/npm-registry-fetch@npm:8.0.1"
+"@types/npm-registry-fetch@npm:^8.0.2":
+  version: 8.0.2
+  resolution: "@types/npm-registry-fetch@npm:8.0.2"
   dependencies:
     "@types/node": "*"
-    "@types/node-fetch": "*"
+    "@types/node-fetch": ^2.5.12
     "@types/npm-package-arg": "*"
     "@types/npmlog": "*"
     "@types/ssri": "*"
-  checksum: 0f3535fc01dd042e0b32d918734770069996ecccb38d1b2a8a1382f07923f9ff56fa06edb0b6153d8922723fcf5a8dd3e14b4105a32bd92303e528caf2d3460b
+  checksum: fb90c0ebefde42f3d0ca308819513f4f6cfae642a4555480caacfef03d9f677c760f0805c927c60b481683b2f2ddac90cee3805e673cb591228ce8ee4e5ecaaa
   languageName: node
   linkType: hard
 
