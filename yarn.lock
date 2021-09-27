@@ -296,7 +296,7 @@ __metadata:
     eslint: ^7.32.0
     husky: ^6.0.0
     js-yaml: ^4.1.0
-    lint-staged: ^11.0.1
+    lint-staged: ^11.1.2
     micromatch: ^4.0.4
     npm-package-arg: ^8.1.5
     npm-registry-fetch: ^11.0.0
@@ -2972,7 +2972,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lint-staged@npm:^11.0.1":
+"lint-staged@npm:^11.1.2":
   version: 11.1.2
   resolution: "lint-staged@npm:11.1.2"
   dependencies:
