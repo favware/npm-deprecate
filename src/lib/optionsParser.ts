@@ -26,7 +26,7 @@ export async function parseOptionsFile(cliOptions: Options) {
 				...options,
 				package: [...(fileOptions.package ?? []), ...(options.package ?? [])]
 			};
-		} catch (err) {
+		} catch (error) {
 			logVerboseError({
 				text: ['Failed to read yaml config file'],
 				verbose: options.verbose,
@@ -35,7 +35,7 @@ export async function parseOptionsFile(cliOptions: Options) {
 					npmDeprecateRcYamlExists ? npmDeprecateRcYamlPath : npmDeprecateRcYmlPath,
 					'',
 					'Full error: ',
-					err
+					(error as Error).message
 				],
 				exitAfterLog: true
 			});
@@ -49,7 +49,7 @@ export async function parseOptionsFile(cliOptions: Options) {
 				...options,
 				package: [...(fileOptions.package ?? []), ...(options.package ?? [])]
 			};
-		} catch (err) {
+		} catch (error) {
 			logVerboseError({
 				text: ['Failed to read json config file'],
 				verbose: options.verbose,
@@ -58,7 +58,7 @@ export async function parseOptionsFile(cliOptions: Options) {
 					npmDeprecateRcExists ? npmDeprecateRcPath : npmDeprecateRcJsonPath,
 					'',
 					'Full error: ',
-					err
+					(error as Error).message
 				],
 				exitAfterLog: true
 			});
