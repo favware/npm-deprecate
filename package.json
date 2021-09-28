@@ -37,7 +37,7 @@
 	"dependencies": {
 		"@sapphire/fetch": "next",
 		"@sapphire/utilities": "^2.0.1",
-		"colorette": "^1.4.0",
+		"colorette": "^2.0.12",
 		"commander": "^8.1.0",
 		"js-yaml": "^4.1.0",
 		"micromatch": "^4.0.4",
@@ -45,11 +45,11 @@
 		"npm-registry-fetch": "^11.0.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^12.1.4",
-		"@commitlint/config-conventional": "^12.1.4",
+		"@commitlint/cli": "^13.2.0",
+		"@commitlint/config-conventional": "^13.2.0",
 		"@sapphire/eslint-config": "^3.2.3",
 		"@sapphire/prettier-config": "^1.1.4",
-		"@sapphire/ts-config": "^2.3.2",
+		"@sapphire/ts-config": "^3.0.0",
 		"@types/js-yaml": "^4.0.3",
 		"@types/micromatch": "^4",
 		"@types/node": "^15.14.0",
@@ -59,7 +59,7 @@
 		"@vercel/ncc": "^0.31.1",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^7.32.0",
-		"husky": "^6.0.0",
+		"husky": "^7.0.2",
 		"lint-staged": "^11.1.2",
 		"prettier": "^2.4.1",
 		"pretty-quick": "^3.1.1",

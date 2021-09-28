@@ -109,7 +109,7 @@ export async function deprecatePackages(options: Options): Promise<void> {
 				text: [`Got an error while deprecating!`],
 				exitAfterLog: true,
 				verbose: options.verbose,
-				verboseText: [error],
+				verboseText: [(error as Error).message],
 				logWithThrownError: true
 			});
 		}
