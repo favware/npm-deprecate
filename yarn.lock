@@ -264,7 +264,7 @@ __metadata:
     "@types/npm-registry-fetch": ^8.0.2
     "@vercel/ncc": ^0.31.1
     colorette: ^2.0.12
-    commander: ^8.1.0
+    commander: ^8.2.0
     cz-conventional-changelog: ^3.3.0
     eslint: ^7.32.0
     husky: ^7.0.2
@@ -1169,7 +1169,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"commander@npm:^8.1.0":
+"commander@npm:^8.2.0":
   version: 8.2.0
   resolution: "commander@npm:8.2.0"
   checksum: e868805bc266777f7a9c8a740e15b9e02b8148d8251f577ea9b9ef373ac0bdeb77b9b60cfc033592c9e1affea89993be08c13c623f0c619f9bf152c0e4d12cb0

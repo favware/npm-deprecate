@@ -38,7 +38,7 @@
 		"@sapphire/fetch": "next",
 		"@sapphire/utilities": "^2.0.1",
 		"colorette": "^2.0.12",
-		"commander": "^8.1.0",
+		"commander": "^8.2.0",
 		"js-yaml": "^4.1.0",
 		"micromatch": "^4.0.4",
 		"npm-package-arg": "^8.1.5",
