@@ -32,7 +32,8 @@
 		"build": "tsc -b src",
 		"watch": "tsc -b src -w",
 		"sversion": "standard-version",
-		"prepare": "husky install .github/husky"
+		"prepare": "husky install .github/husky",
+		"prepublishOnly": "yarn build"
 	},
 	"dependencies": {
 		"@sapphire/fetch": "next",
