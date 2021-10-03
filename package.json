@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@sapphire/fetch": "next",
 		"@sapphire/utilities": "^2.0.1",
-		"colorette": "^2.0.12",
+		"colorette": "^2.0.13",
 		"commander": "^8.2.0",
 		"js-yaml": "^4.1.0",
 		"micromatch": "^4.0.4",
