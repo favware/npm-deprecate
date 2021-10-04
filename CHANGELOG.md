@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/favware/npm-deprecate/compare/v1.0.3...v1.0.4) (2021-10-04)
+
+### Bug Fixes
+
+-   bump dependencies to latest versions ([840b905](https://github.com/favware/npm-deprecate/commit/840b905979eb0ce84b659e3dfb73d197dd2ed34e))
+-   **deps:** update dependency colorette to ^2.0.13 ([#15](https://github.com/favware/npm-deprecate/issues/15)) ([cc3584e](https://github.com/favware/npm-deprecate/commit/cc3584e7ff44c1f8ade2c8aec8edb03c2dc93f33))
+
 ### [1.0.3](https://github.com/favware/npm-deprecate/compare/v1.0.2...v1.0.3) (2021-10-01)
 
 ### Bug Fixes
