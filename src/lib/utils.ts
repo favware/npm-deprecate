@@ -1,4 +1,4 @@
-import { Awaited, isThenable } from '@sapphire/utilities';
+import { Awaitable, isThenable } from '@sapphire/utilities';
 import { cyan, green, red } from 'colorette';
 import type { PathLike } from 'fs';
 import { readFile } from 'fs/promises';
@@ -20,7 +20,7 @@ export async function readJson<T>(pathLike: PathLike): Promise<T> {
 	return JSON.parse(await readFile(pathLike, { encoding: 'utf-8' })) as T;
 }
 
-export async function doActionAndLog<T>(preActionLog: string, action: Awaited<T>): Promise<T> {
+export async function doActionAndLog<T>(preActionLog: string, action: Awaitable<T>): Promise<T> {
 	process.stdout.write(cyan(`${preActionLog}... `));
 	try {
 		const returnValue = isThenable(action) ? ((await action) as T) : action;
