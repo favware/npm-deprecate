@@ -268,11 +268,11 @@ __metadata:
   dependencies:
     "@commitlint/cli": ^13.2.1
     "@commitlint/config-conventional": ^13.2.0
-    "@sapphire/eslint-config": ^3.3.0
+    "@sapphire/eslint-config": ^3.3.1
     "@sapphire/fetch": ^2.0.0
-    "@sapphire/prettier-config": ^1.2.0
+    "@sapphire/prettier-config": ^1.2.1
     "@sapphire/ts-config": ^3.1.0
-    "@sapphire/utilities": ^3.0.1
+    "@sapphire/utilities": ^3.0.2
     "@types/js-yaml": ^4.0.3
     "@types/micromatch": ^4.0.2
     "@types/node": ^16.10.2
@@ -377,18 +377,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/eslint-config@npm:^3.3.0":
-  version: 3.3.0
-  resolution: "@sapphire/eslint-config@npm:3.3.0"
+"@sapphire/eslint-config@npm:^3.3.1":
+  version: 3.3.1
+  resolution: "@sapphire/eslint-config@npm:3.3.1"
   dependencies:
-    "@typescript-eslint/eslint-plugin": ^4.32.0
-    "@typescript-eslint/parser": ^4.32.0
+    "@typescript-eslint/eslint-plugin": ^4.33.0
+    "@typescript-eslint/parser": ^4.33.0
     eslint: ^7.32.0
     eslint-config-prettier: ^8.3.0
     eslint-plugin-prettier: ^4.0.0
     prettier: ^2.4.1
     typescript: ^4.4.3
-  checksum: 27d037af2dd77ff4c1024c296e89f392e2a270f506dd5f0b8d3fce63382feacd05c1d7d4b4555debaca713b2b2a5435ca4b991a0fb4f66a5447b9717e325bd1a
+  checksum: c4da7198f02d4998dda911d8ced555b7806ddc5fd5aa4cbba3fc0d2c837dafd05a51c98fd0237d4797d2178626e7f905845d9818ad4f2feb9fe5c434d69f80e7
   languageName: node
   linkType: hard
 
@@ -401,12 +401,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/prettier-config@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "@sapphire/prettier-config@npm:1.2.0"
+"@sapphire/prettier-config@npm:^1.2.1":
+  version: 1.2.1
+  resolution: "@sapphire/prettier-config@npm:1.2.1"
   dependencies:
-    prettier: 2.4.1
-  checksum: 9aa2143e8d2195c2ec1872354a1968cef306a62bb928dc806e61720f355b432e330a544dd171bec365885e4eea6b259d39a7af35828e6feff0ce5e2d5b780d0a
+    prettier: ^2.4.1
+  checksum: d9ab840d57d263423fb197bad25830195d285bfcd28a1c8c431154f24676674cd61d40edcfa8eabdb6415b17cfdf1c40342e3397a8d20b79f814df7fc2bb46e6
   languageName: node
   linkType: hard
 
@@ -420,10 +420,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/utilities@npm:^3.0.1":
-  version: 3.0.1
-  resolution: "@sapphire/utilities@npm:3.0.1"
-  checksum: cc62d199f21ec33f0d41e71bb222093e65c674cb0c4863b57acc81118483ce6f27b1ef253962473dcd34b69d6955c10ea26b1c3aa645ca3a23f0f160dd7a0bd6
+"@sapphire/utilities@npm:^3.0.2":
+  version: 3.0.2
+  resolution: "@sapphire/utilities@npm:3.0.2"
+  checksum: 2891dffb45e191d1a6dba593e55d0cc04a749cb95310b97193423d9cefd18b715b76844b7bc50b22834968364f787f0c2dec21c629d8ac9b0f784936aff75d6b
   languageName: node
   linkType: hard
 
@@ -545,7 +545,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^4.32.0":
+"@typescript-eslint/eslint-plugin@npm:^4.33.0":
   version: 4.33.0
   resolution: "@typescript-eslint/eslint-plugin@npm:4.33.0"
   dependencies:
@@ -583,7 +583,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^4.32.0":
+"@typescript-eslint/parser@npm:^4.33.0":
   version: 4.33.0
   resolution: "@typescript-eslint/parser@npm:4.33.0"
   dependencies:
@@ -3708,7 +3708,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:2.4.1, prettier@npm:^2.4.1":
+"prettier@npm:^2.4.1":
   version: 2.4.1
   resolution: "prettier@npm:2.4.1"
   bin:
