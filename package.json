@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@sapphire/fetch": "^2.0.0",
 		"@sapphire/utilities": "^3.0.1",
-		"colorette": "^2.0.14",
+		"colorette": "^2.0.16",
 		"commander": "^8.2.0",
 		"js-yaml": "^4.1.0",
 		"micromatch": "^4.0.4",
@@ -46,7 +46,7 @@
 		"npm-registry-fetch": "^11.0.0"
 	},
 	"devDependencies": {
-		"@commitlint/cli": "^13.2.0",
+		"@commitlint/cli": "^13.2.1",
 		"@commitlint/config-conventional": "^13.2.0",
 		"@sapphire/eslint-config": "^3.3.0",
 		"@sapphire/prettier-config": "^1.2.0",
@@ -59,7 +59,7 @@
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^7.32.0",
 		"husky": "^7.0.2",
-		"lint-staged": "^11.2.0",
+		"lint-staged": "^11.2.2",
 		"prettier": "^2.4.1",
 		"pretty-quick": "^3.1.1",
 		"standard-version": "^9.3.1",
@@ -67,7 +67,7 @@
 	},
 	"engines": {
 		"node": ">=16",
-		"npm": ">=7.24.1"
+		"npm": ">=7.24.2"
 	},
 	"repository": {
 		"type": "git",
