@@ -57,7 +57,7 @@
 		"@types/npm-package-arg": "^6.1.1",
 		"@types/npm-registry-fetch": "^8.0.2",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^7.32.0",
+		"eslint": "^8.0.0",
 		"husky": "^7.0.2",
 		"lint-staged": "^11.2.2",
 		"prettier": "^2.4.1",
