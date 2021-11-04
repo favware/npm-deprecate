@@ -39,7 +39,7 @@
 		"@sapphire/fetch": "^2.0.1",
 		"@sapphire/utilities": "^3.0.3",
 		"colorette": "^2.0.16",
-		"commander": "^8.2.0",
+		"commander": "^8.3.0",
 		"js-yaml": "^4.1.0",
 		"micromatch": "^4.0.4",
 		"npm-package-arg": "^8.1.5",
@@ -51,19 +51,19 @@
 		"@sapphire/eslint-config": "^4.0.0",
 		"@sapphire/prettier-config": "^1.2.2",
 		"@sapphire/ts-config": "^3.1.1",
-		"@types/js-yaml": "^4.0.3",
+		"@types/js-yaml": "^4.0.4",
 		"@types/micromatch": "^4.0.2",
-		"@types/node": "^16.10.3",
+		"@types/node": "^16.11.6",
 		"@types/npm-package-arg": "^6.1.1",
 		"@types/npm-registry-fetch": "^8.0.2",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8.0.0",
-		"husky": "^7.0.2",
-		"lint-staged": "^11.2.3",
+		"eslint": "^8.1.0",
+		"husky": "^7.0.4",
+		"lint-staged": "^11.2.6",
 		"prettier": "^2.4.1",
 		"pretty-quick": "^3.1.1",
-		"standard-version": "^9.3.1",
-		"typescript": "^4.4.3"
+		"standard-version": "^9.3.2",
+		"typescript": "^4.4.4"
 	},
 	"engines": {
 		"node": ">=16",
@@ -97,5 +97,5 @@
 		"extends": "@sapphire"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@3.0.1"
+	"packageManager": "yarn@3.1.0"
 }
