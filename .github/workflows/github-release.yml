@@ -19,14 +19,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com
-      - name: Restore CI Cache
-        uses: actions/cache@c64c572235d810460d0d6876e9c705ad5002b353 # renovate: tag=v2.1.6
-        id: cache-restore
-        with:
-          path: node_modules
-          key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
-      - name: Install Dependencies if Cache Miss
-        if: ${{ !steps.cache-restore.outputs.cache-hit }}
+          cache: yarn
+      - name: Install Dependencies
         run: yarn --frozen-lockfile
       - name: Publish
         run: npm publish || true
