@@ -279,7 +279,7 @@ __metadata:
     lint-staged: ^11.2.6
     micromatch: ^4.0.4
     npm-package-arg: ^8.1.5
-    npm-registry-fetch: ^11.0.0
+    npm-registry-fetch: ^12.0.0
     prettier: ^2.5.1
     pretty-quick: ^3.1.2
     standard-version: ^9.3.2
@@ -3482,9 +3482,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-registry-fetch@npm:^11.0.0":
-  version: 11.0.0
-  resolution: "npm-registry-fetch@npm:11.0.0"
+"npm-registry-fetch@npm:^12.0.0":
+  version: 12.0.0
+  resolution: "npm-registry-fetch@npm:12.0.0"
   dependencies:
     make-fetch-happen: ^9.0.1
     minipass: ^3.1.3
@@ -3492,7 +3492,7 @@ __metadata:
     minipass-json-stream: ^1.0.1
     minizlib: ^2.0.0
     npm-package-arg: ^8.0.0
-  checksum: dda149cd86f8ee73db1b0a0302fbf59983ef03ad180051caa9aad1de9f1e099aaa77adcda3ca2c3bd9d98958e9e6593bd56ee21d3f660746b0a65fafbf5ae161
+  checksum: 71da707148567659d8e0fe43d9fb735efad6a4b0ca19747dee1d5b6995d3c0c96f430700c5d040f8249e2b6aa6dc6c91ec0ffe0d0d8770412c0ab372ed2f68df
   languageName: node
   linkType: hard
 
