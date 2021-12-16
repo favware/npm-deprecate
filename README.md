@@ -150,15 +150,10 @@ jobs:
               uses: actions/setup-node@v2
               with:
                   node-version: 16
-            - name: Restore CI Cache
-              uses: actions/cache@v2.1.6
-              id: cache-restore
-              with:
-                  path: node_modules
-                  key: ${{ runner.os }}-16-${{ hashFiles('**/yarn.lock') }}
+                  cache: yarn
+                  registry-url: https://registry.npmjs.org/
             - name: Install Dependencies if Cache Miss
-              if: ${{ !steps.cache-restore.outputs.cache-hit }}
-              run: yarn --frozen-lockfile
+              run: yarn --immutable
             - name: Deprecate versions
               run: yarn npm-deprecate
               env:
