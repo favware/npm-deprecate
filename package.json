@@ -37,7 +37,7 @@
 	},
 	"dependencies": {
 		"@sapphire/fetch": "^2.0.4",
-		"@sapphire/utilities": "^3.2.0",
+		"@sapphire/utilities": "^3.2.1",
 		"colorette": "^2.0.16",
 		"commander": "^8.3.0",
 		"js-yaml": "^4.1.0",
@@ -48,9 +48,9 @@
 	"devDependencies": {
 		"@commitlint/cli": "^16.0.2",
 		"@commitlint/config-conventional": "^16.0.0",
-		"@sapphire/eslint-config": "^4.0.10",
-		"@sapphire/prettier-config": "^1.2.8",
-		"@sapphire/ts-config": "^3.1.7",
+		"@sapphire/eslint-config": "^4.0.11",
+		"@sapphire/prettier-config": "^1.2.9",
+		"@sapphire/ts-config": "^3.1.8",
 		"@types/js-yaml": "^4.0.5",
 		"@types/micromatch": "^4.0.2",
 		"@types/node": "^17.0.8",
