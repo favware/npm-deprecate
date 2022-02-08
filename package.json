@@ -39,7 +39,7 @@
 		"@sapphire/fetch": "^2.1.0",
 		"@sapphire/utilities": "^3.3.0",
 		"colorette": "^2.0.16",
-		"commander": "^8.3.0",
+		"commander": "^9.0.0",
 		"js-yaml": "^4.1.0",
 		"micromatch": "^4.0.4",
 		"npm-package-arg": "^8.1.5",
