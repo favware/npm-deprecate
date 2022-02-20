@@ -340,7 +340,7 @@ __metadata:
     lint-staged: ^12.3.4
     micromatch: ^4.0.4
     npm-package-arg: ^9.0.0
-    npm-registry-fetch: ^12.0.2
+    npm-registry-fetch: ^13.0.0
     prettier: ^2.5.1
     pretty-quick: ^3.1.3
     standard-version: ^9.3.2
@@ -3261,9 +3261,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"make-fetch-happen@npm:^10.0.1":
-  version: 10.0.2
-  resolution: "make-fetch-happen@npm:10.0.2"
+"make-fetch-happen@npm:^10.0.2":
+  version: 10.0.3
+  resolution: "make-fetch-happen@npm:10.0.3"
   dependencies:
     agentkeepalive: ^4.2.0
     cacache: ^15.3.0
@@ -3281,7 +3281,7 @@ __metadata:
     promise-retry: ^2.0.1
     socks-proxy-agent: ^6.1.1
     ssri: ^8.0.1
-  checksum: 5a620f84ab9e28673f70b0640b15133cb329ca4dbeec17e24b5029f07b134c52d96ebac150cab99979c48c5e6e99056978ed0321e4ce1e22a4d4d6fc7148c2fd
+  checksum: edf3ba5119c7cf528485dbeafd14dc84c01c97038c13696d20ff5edb5274d9fddc418be3dffe7c542f7dc4691dc221e9faf913b207f6ccb7c81b43f479525c0c
   languageName: node
   linkType: hard
 
@@ -3618,17 +3618,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-package-arg@npm:^8.1.5":
-  version: 8.1.5
-  resolution: "npm-package-arg@npm:8.1.5"
-  dependencies:
-    hosted-git-info: ^4.0.1
-    semver: ^7.3.4
-    validate-npm-package-name: ^3.0.0
-  checksum: ae76afbcebb4ea8d0b849b8b18ed1b0491030fb04a0af5d75f1b8390cc50bec186ced9fbe60f47d939eab630c7c0db0919d879ac56a87d3782267dfe8eec60d3
-  languageName: node
-  linkType: hard
-
 "npm-package-arg@npm:^9.0.0":
   version: 9.0.0
   resolution: "npm-package-arg@npm:9.0.0"
@@ -3640,17 +3629,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-registry-fetch@npm:^12.0.2":
-  version: 12.0.2
-  resolution: "npm-registry-fetch@npm:12.0.2"
+"npm-registry-fetch@npm:^13.0.0":
+  version: 13.0.0
+  resolution: "npm-registry-fetch@npm:13.0.0"
   dependencies:
-    make-fetch-happen: ^10.0.1
+    make-fetch-happen: ^10.0.2
     minipass: ^3.1.6
     minipass-fetch: ^1.4.1
     minipass-json-stream: ^1.0.1
     minizlib: ^2.1.2
-    npm-package-arg: ^8.1.5
-  checksum: 88ef49b6fad104165f183ec804a65471a23cead40fa035ac57f2cbe084feffe9c10bed8c4234af3fa549d947108450d5359b41ae5dec9a1ffca4d8fa7c7f78b8
+    npm-package-arg: ^9.0.0
+    proc-log: ^2.0.0
+  checksum: 3cb3275e71ec9922bfe4118cc30a6b25dee8ffed1c47d2f8f122c9e78ef3f67c1fa8adc8c7b5c22e1d8c159224a76fb25f01b6e6f39d01c7825b6cee92f8b58c
   languageName: node
   linkType: hard
 
@@ -3961,6 +3951,13 @@ __metadata:
   bin:
     pretty-quick: bin/pretty-quick.js
   checksum: 28bdc32571e6308e049497f58a9245f272275973782b6ed7fbcf98937101cc605a81b3ab48629dba4687b7e86c87a3733febacdc0746ca4da5d1c80a0b88cf45
+  languageName: node
+  linkType: hard
+
+"proc-log@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "proc-log@npm:2.0.0"
+  checksum: 74ab7f7d47fee1fa81e068e9a7f4cdca7e20b6b14fe51fad1f595bf9d4ce5451c858922a25f447835021ec89192788b56700cd7740ede50966099c41ebe0c70c
   languageName: node
   linkType: hard
 
