@@ -70,6 +70,10 @@
 		"standard-version": "^9.3.2",
 		"typescript": "^4.6.3"
 	},
+	"resolutions": {
+		"ansi-regex": "^5.0.1",
+		"minimist": "^1.2.6"
+	},
 	"engines": {
 		"node": ">=16",
 		"npm": ">=7.24.2"
