@@ -36,7 +36,7 @@
 		"prepublishOnly": "yarn build"
 	},
 	"dependencies": {
-		"@sapphire/fetch": "^2.3.1",
+		"@sapphire/fetch": "^2.4.0",
 		"@sapphire/utilities": "^3.6.2",
 		"colorette": "^2.0.17",
 		"commander": "^9.3.0",
