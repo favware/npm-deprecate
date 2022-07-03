@@ -37,7 +37,7 @@
 	},
 	"dependencies": {
 		"@sapphire/fetch": "^2.4.0",
-		"@sapphire/utilities": "^3.6.2",
+		"@sapphire/utilities": "^3.7.0",
 		"colorette": "^2.0.19",
 		"commander": "^9.3.0",
 		"js-yaml": "^4.1.0",
