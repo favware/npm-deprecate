@@ -39,11 +39,11 @@
 		"@sapphire/fetch": "^2.4.0",
 		"@sapphire/utilities": "^3.7.0",
 		"colorette": "^2.0.19",
-		"commander": "^9.3.0",
+		"commander": "^9.4.0",
 		"js-yaml": "^4.1.0",
 		"micromatch": "^4.0.5",
 		"npm-package-arg": "^9.1.0",
-		"npm-registry-fetch": "^13.1.1"
+		"npm-registry-fetch": "^13.2.0"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.0.3",
@@ -57,10 +57,10 @@
 		"@types/node-fetch": "^2.6.2",
 		"@types/npm-package-arg": "^6.1.1",
 		"@types/npm-registry-fetch": "^8.0.4",
-		"@typescript-eslint/eslint-plugin": "^5.30.5",
-		"@typescript-eslint/parser": "^5.30.5",
+		"@typescript-eslint/eslint-plugin": "^5.30.6",
+		"@typescript-eslint/parser": "^5.30.6",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8.19.0",
+		"eslint": "^8.20.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.1",
