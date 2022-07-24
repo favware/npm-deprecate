@@ -31,5 +31,5 @@
 			"default": false
 		}
 	},
-	"required": ["dist"]
+	"required": ["name", "package"]
 }
