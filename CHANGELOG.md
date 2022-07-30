@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.5](https://github.com/favware/npm-deprecate/compare/v1.0.4...v1.0.5) (2022-07-30)
+
+### Bug Fixes
+
+-   **deps:** update dependency @sapphire/fetch to ^2.4.0 ([#88](https://github.com/favware/npm-deprecate/issues/88)) ([bde0d5c](https://github.com/favware/npm-deprecate/commit/bde0d5c1f2dd3cc5cb22207986a2a721779591a3))
+-   **deps:** update dependency @sapphire/fetch to ^2.4.1 ([#100](https://github.com/favware/npm-deprecate/issues/100)) ([d3007c3](https://github.com/favware/npm-deprecate/commit/d3007c30b2996ccf5b3355758e2c326263188ab4))
+-   **deps:** update dependency @sapphire/utilities to ^3.7.0 ([#95](https://github.com/favware/npm-deprecate/issues/95)) ([216d73c](https://github.com/favware/npm-deprecate/commit/216d73cd8a0adc41a277c23f12b1af94d0118167))
+-   **deps:** update dependency commander to v9 ([#36](https://github.com/favware/npm-deprecate/issues/36)) ([148d505](https://github.com/favware/npm-deprecate/commit/148d50510895cda2f337dcfa2ddc7d73fe86fcbd))
+-   **deps:** update dependency npm-package-arg to v9 ([#41](https://github.com/favware/npm-deprecate/issues/41)) ([b6a4873](https://github.com/favware/npm-deprecate/commit/b6a48733d2cdbada621564f4165815fff40d6a03))
+-   **deps:** update dependency npm-registry-fetch to v13 ([4978de6](https://github.com/favware/npm-deprecate/commit/4978de676c36de4efbf00b6b0d2df957fe081d15))
+-   update dependecies ([2d7fa22](https://github.com/favware/npm-deprecate/commit/2d7fa223bb6cf02ba11107b295a423d256b97308))
+
 ### [1.0.4](https://github.com/favware/npm-deprecate/compare/v1.0.3...v1.0.4) (2021-10-04)
 
 ### Bug Fixes
