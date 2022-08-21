@@ -43,7 +43,7 @@
 		"js-yaml": "^4.1.0",
 		"micromatch": "^4.0.5",
 		"npm-package-arg": "^9.1.0",
-		"npm-registry-fetch": "^13.3.0"
+		"npm-registry-fetch": "^13.3.1"
 	},
 	"devDependencies": {
 		"@commitlint/cli": "^17.0.3",
@@ -57,8 +57,8 @@
 		"@types/node-fetch": "^2.6.2",
 		"@types/npm-package-arg": "^6.1.1",
 		"@types/npm-registry-fetch": "^8.0.4",
-		"@typescript-eslint/eslint-plugin": "^5.33.0",
-		"@typescript-eslint/parser": "^5.33.0",
+		"@typescript-eslint/eslint-plugin": "^5.33.1",
+		"@typescript-eslint/parser": "^5.33.1",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.22.0",
 		"eslint-config-prettier": "^8.5.0",
