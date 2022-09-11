@@ -57,8 +57,8 @@
 		"@types/node-fetch": "^2.6.2",
 		"@types/npm-package-arg": "^6.1.1",
 		"@types/npm-registry-fetch": "^8.0.4",
-		"@typescript-eslint/eslint-plugin": "^5.36.1",
-		"@typescript-eslint/parser": "^5.36.1",
+		"@typescript-eslint/eslint-plugin": "^5.36.2",
+		"@typescript-eslint/parser": "^5.36.2",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.23.0",
 		"eslint-config-prettier": "^8.5.0",
@@ -68,7 +68,7 @@
 		"prettier": "^2.7.1",
 		"pretty-quick": "^3.1.3",
 		"standard-version": "^9.5.0",
-		"typescript": "^4.8.2"
+		"typescript": "^4.8.3"
 	},
 	"resolutions": {
 		"ansi-regex": "^5.0.1",
