@@ -57,10 +57,10 @@
 		"@types/node-fetch": "^2.6.2",
 		"@types/npm-package-arg": "^6.1.1",
 		"@types/npm-registry-fetch": "^8.0.4",
-		"@typescript-eslint/eslint-plugin": "^5.38.1",
-		"@typescript-eslint/parser": "^5.38.1",
+		"@typescript-eslint/eslint-plugin": "^5.39.0",
+		"@typescript-eslint/parser": "^5.39.0",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8.24.0",
+		"eslint": "^8.25.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-prettier": "^4.2.1",
 		"husky": "^8.0.1",
@@ -106,5 +106,5 @@
 		"extends": "@sapphire"
 	},
 	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@3.2.3"
+	"packageManager": "yarn@3.2.4"
 }
