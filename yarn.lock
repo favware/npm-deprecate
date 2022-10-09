@@ -351,7 +351,7 @@ __metadata:
     "@sapphire/fetch": ^2.4.1
     "@sapphire/prettier-config": ^1.4.4
     "@sapphire/ts-config": ^3.3.4
-    "@sapphire/utilities": ^3.9.3
+    "@sapphire/utilities": ^3.11.0
     "@types/js-yaml": ^4.0.5
     "@types/micromatch": ^4.0.2
     "@types/node": ^18.6.2
@@ -553,10 +553,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/utilities@npm:^3.9.3":
-  version: 3.9.3
-  resolution: "@sapphire/utilities@npm:3.9.3"
-  checksum: 9f3f977fd5c0677d5f79136e9cb68ade3317cfba3e87bb58689f4af68233a807af34eb6092ad262c946d5eaf5c4a76cd534b0b395ebbaf0f0912dd80e174f912
+"@sapphire/utilities@npm:^3.11.0":
+  version: 3.11.0
+  resolution: "@sapphire/utilities@npm:3.11.0"
+  checksum: 3c8521038b8879524e8114f39eefc8b3b06cf825995f709684238b5cb14bd7df06d232a26a88f79160df290a66f9aa3133f5ce4ff8e2398033db9f301ad31e0d
   languageName: node
   linkType: hard
 
