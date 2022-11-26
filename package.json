@@ -1,6 +1,6 @@
 {
   "name": "@favware/npm-deprecate",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Programmatically deprecate your NPM published packages",
   "author": "@favware",
   "license": "MIT",

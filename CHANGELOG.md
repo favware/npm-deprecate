@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.0.6](https://github.com/favware/npm-deprecate/compare/v1.0.5...v1.0.6) - (2022-11-26)
+
+## 🐛 Bug Fixes
+
+- Fixed parsing of custom messages and other default options ([53a4e02](https://github.com/favware/npm-deprecate/commit/53a4e02f7a327e07fc0ad448c21eff4b63609687))
+- **deps:** Update dependency npm-package-arg to v10 (#133) ([ee4c48c](https://github.com/favware/npm-deprecate/commit/ee4c48c9a2b6cc97499acfb410d88206b935ec5b))
+- **deps:** Update dependency npm-registry-fetch to v14 (#129) ([367477b](https://github.com/favware/npm-deprecate/commit/367477ba7aca06d19f6d7285b3fc09e0c147e170))
+- **deps:** Update dependency @sapphire/utilities to ^3.11.0 (#125) ([4a892bb](https://github.com/favware/npm-deprecate/commit/4a892bb979398e81a43498f86c67782e1134c21e))
+- **deps:** Update dependency @sapphire/utilities to ^3.9.3 (#114) ([b64fa24](https://github.com/favware/npm-deprecate/commit/b64fa24f1ddb03822e72c150a72e7c2909e57904))
+- **deps:** Update dependency @sapphire/utilities to ^3.9.0 (#105) ([f4b53b5](https://github.com/favware/npm-deprecate/commit/f4b53b5d6b0521eba28180890c9f438ebdbc52aa))
+
+## 🪞 Styling
+
+- Apply new prettier config to all files ([e3367bb](https://github.com/favware/npm-deprecate/commit/e3367bb65adf314e8e32d1242c6aafdc2b692c6b))
+
 ### [1.0.5](https://github.com/favware/npm-deprecate/compare/v1.0.4...v1.0.5) (2022-07-30)
 
 ### Bug Fixes
