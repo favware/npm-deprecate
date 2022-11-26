@@ -36,7 +36,7 @@ export async function deprecatePackages(options: Options): Promise<void> {
   if (!registryJsonFiles.length) {
     logVerboseError({
       text: [
-        'Looks like the action failed to get the data for any of the provided packages. Are you sure your package names are correct? You can check by manually adding the package name to the URL "https://registry.npmjs.com/". For example "https://registry.npmjs.com/@favware/rollup-type-bundler"'
+        'Looks like the action failed to get the data for any of the provided packages. Are you sure your package names are correct? You can check by manually adding the package name to the URL "https://registry.npmjs.com/". For example "https://registry.npmjs.com/@favware/npm-deprecate"'
       ],
       verbose: options.verbose,
       exitAfterLog: true,

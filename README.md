@@ -109,7 +109,7 @@ following to your config file:
   "name": "*next*",
   "deprecateDistTag": false,
   "verbose": true,
-  "package": ["@favware/rollup-type-bundler", "@favware/npm-deprecate"]
+  "package": ["@favware/cliff-jumper", "@favware/npm-deprecate"]
 }
 ```
 
@@ -120,7 +120,7 @@ name: '*next*'
 deprecateDistTag: false
 verbose: true
 package:
-  - '@favware/rollup-type-bundler'
+  - '@favware/cliff-jumper'
   - '@favware/npm-deprecate'
 ```
 
