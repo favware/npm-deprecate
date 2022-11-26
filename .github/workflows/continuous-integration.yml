@@ -26,6 +26,29 @@ jobs:
       - name: Run ESLint
         run: yarn lint --fix=false
 
+  Building:
+    name: Compile source code Node v${{ matrix.node }}
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        node: [14, 16, 18]
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v3
+      - name: Add problem matcher
+        run: echo "::add-matcher::.github/problemMatchers/tsc.json"
+      - name: Use Node.js v${{ matrix.node }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node }}
+          cache: yarn
+          registry-url: https://registry.yarnpkg.com/
+      - name: Install Dependencies
+        run: yarn --immutable
+      - name: Build Code
+        run: yarn build
+
   CodeQL:
     name: Codequality
     runs-on: ubuntu-latest
@@ -36,25 +59,8 @@ jobs:
       # Initializes the CodeQL tools for scanning.
       - name: Initialize CodeQL
         uses: github/codeql-action/init@v2
+        with:
+          languages: typescript
 
       - name: Perform CodeQL Analysis
         uses: github/codeql-action/analyze@v2
-
-  Building:
-    name: Compile source code
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Project
-        uses: actions/checkout@v3
-      - name: Add problem matcher
-        run: echo "::add-matcher::.github/problemMatchers/tsc.json"
-      - name: Use Node.js v18
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
-          cache: yarn
-          registry-url: https://registry.yarnpkg.com/
-      - name: Install Dependencies
-        run: yarn --immutable
-      - name: Build Code
-        run: yarn build
