@@ -1,35 +1,35 @@
 {
-	"$schema": "http://json-schema.org/draft-04/schema#",
-	"type": "object",
-	"properties": {
-		"name": {
-			"description": "A glob pattern that will determine which packages are deprecated. Anything that passes [Micromatch](https://www.npmjs.com/package/micromatch) will work here. For example set `*dev*` to match `13.2.0-dev.123a`.",
-			"type": "string",
-			"default": ""
-		},
-		"deprecateDistTag": {
-			"description": "Whether the version that is in the current dist tags should be preserved or not. By default dist tags are preserved. When set to `true`, dist tags are pruned.",
-			"type": "boolean",
-			"default": false
-		},
-		"message": {
-			"description": "A custom message to show for all the deprecated versions.",
-			"type": "string",
-			"default": "This version has been automatically deprecated by @favware/npm-deprecate. Please use a newer version."
-		},
-		"package": {
-			"description": "The packages that should be deprecated",
-			"type": "array",
-			"items": {
-				"type": "string"
-			},
-			"default": []
-		},
-		"verbose": {
-			"description": "Whether to print verbose information",
-			"type": "boolean",
-			"default": false
-		}
-	},
-	"required": ["name", "package"]
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "name": {
+      "description": "A glob pattern that will determine which packages are deprecated. Anything that passes [Micromatch](https://www.npmjs.com/package/micromatch) will work here. For example set `*dev*` to match `13.2.0-dev.123a`.",
+      "type": "string",
+      "default": ""
+    },
+    "deprecateDistTag": {
+      "description": "Whether the version that is in the current dist tags should be preserved or not. By default dist tags are preserved. When set to `true`, dist tags are pruned.",
+      "type": "boolean",
+      "default": false
+    },
+    "message": {
+      "description": "A custom message to show for all the deprecated versions.",
+      "type": "string",
+      "default": "This version has been automatically deprecated by @favware/npm-deprecate. Please use a newer version."
+    },
+    "package": {
+      "description": "The packages that should be deprecated",
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "default": []
+    },
+    "verbose": {
+      "description": "Whether to print verbose information",
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "required": ["name", "package"]
 }

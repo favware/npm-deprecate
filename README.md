@@ -13,10 +13,12 @@
 
 ## Description
 
-When working on larger libraries it may be desirable to release every commit to NPM automatically using a GitHub workflow.
-However when doing this you'll end up with a LOT of versions on npm, which gets extremely cluttered.
+When working on larger libraries it may be desirable to release every commit to
+NPM automatically using a GitHub workflow. However when doing this you'll end up
+with a LOT of versions on npm, which gets extremely cluttered.
 
-To solve this, one can use this package to programmatically deprecate many versions at once, matching a glob that is checked against the version name.
+To solve this, one can use this package to programmatically deprecate many
+versions at once, matching a glob that is checked against the version name.
 
 ## Installation
 
@@ -76,26 +78,26 @@ Options:
   -h, --help                                   display help for command
 ```
 
-Or, you can set most of these options through a configuration file. This
-file should be located at your current working directory (where you're
-calling this package). It should be named `.npm-deprecaterc`, optionally
-suffixed with `.json`, `.yaml`, or `.yml`.
+Or, you can set most of these options through a configuration file. This file
+should be located at your current working directory (where you're calling this
+package). It should be named `.npm-deprecaterc`, optionally suffixed with
+`.json`, `.yaml`, or `.yml`.
 
 ### Config file fields
 
--   `--name` maps to `name`
--   `--deprecate-dist-tag` maps to `deprecateDistTag`
--   `--verbose` maps to `verbose`
--   `--message` maps to `message`
--   `--package` maps to `package`
+- `--name` maps to `name`
+- `--deprecate-dist-tag` maps to `deprecateDistTag`
+- `--verbose` maps to `verbose`
+- `--message` maps to `message`
+- `--package` maps to `package`
 
-When using `.npm-deprecaterc` or `.npm-deprecaterc.json` as
-your config file you can also use the JSON schema to get schema
-validation. To do so, add the following to your config file:
+When using `.npm-deprecaterc` or `.npm-deprecaterc.json` as your config file you
+can also use the JSON schema to get schema validation. To do so, add the
+following to your config file:
 
 ```json
 {
-	"$schema": "https://raw.githubusercontent.com/favware/npm-deprecate/main/assets/npm-deprecate.schema.json"
+  "$schema": "https://raw.githubusercontent.com/favware/npm-deprecate/main/assets/npm-deprecate.schema.json"
 }
 ```
 
@@ -103,11 +105,11 @@ validation. To do so, add the following to your config file:
 
 ```json
 {
-	"$schema": "https://raw.githubusercontent.com/favware/npm-deprecate/main/assets/npm-deprecate.schema.json",
-	"name": "*next*",
-	"deprecateDistTag": false,
-	"verbose": true,
-	"package": ["@favware/rollup-type-bundler", "@favware/npm-deprecate"]
+  "$schema": "https://raw.githubusercontent.com/favware/npm-deprecate/main/assets/npm-deprecate.schema.json",
+  "name": "*next*",
+  "deprecateDistTag": false,
+  "verbose": true,
+  "package": ["@favware/rollup-type-bundler", "@favware/npm-deprecate"]
 }
 ```
 
@@ -118,17 +120,18 @@ name: '*next*'
 deprecateDistTag: false
 verbose: true
 package:
-    - '@favware/rollup-type-bundler'
-    - '@favware/npm-deprecate'
+  - '@favware/rollup-type-bundler'
+  - '@favware/npm-deprecate'
 ```
 
 ### Default values
 
 This library has opinionated defaults for its options. These are as follows:
 
--   `--deprecate-dist-tag` will default to `false`.
--   `--message` will default to `This version has been automatically deprecated by @favware/npm-deprecate. Please use a newer version.`.
--   `--verbose` will default to `false`.
+- `--deprecate-dist-tag` will default to `false`.
+- `--message` will default to
+  `This version has been automatically deprecated by @favware/npm-deprecate. Please use a newer version.`.
+- `--verbose` will default to `false`.
 
 ### Using this in a GitHub Workflow
 
@@ -136,40 +139,39 @@ This library has opinionated defaults for its options. These are as follows:
 name: NPM Auto Deprecate
 
 on:
-    schedule:
-        - cron: '0 0 * * *'
+  schedule:
+    - cron: '0 0 * * *'
 
 jobs:
-    auto-deprecate:
-        name: NPM Auto Deprecate
-        runs-on: ubuntu-latest
-        steps:
-            - name: Checkout Project
-              uses: actions/checkout@v2
-            - name: Use Node.js v16
-              uses: actions/setup-node@v2
-              with:
-                  node-version: 16
-                  cache: yarn
-                  registry-url: https://registry.npmjs.org/
-            - name: Install Dependencies if Cache Miss
-              run: yarn --immutable
-            - name: Deprecate versions
-              run: yarn npm-deprecate
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
+  auto-deprecate:
+    name: NPM Auto Deprecate
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Project
+        uses: actions/checkout@v2
+      - name: Use Node.js v16
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16
+          cache: yarn
+          registry-url: https://registry.npmjs.org/
+      - name: Install Dependencies if Cache Miss
+        run: yarn --immutable
+      - name: Deprecate versions
+        run: yarn npm-deprecate
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_PUBLISH_TOKEN }}
 ```
 
 ## Buy us some doughnuts
 
 Favware projects are and always will be open source, even if we don't get
-donations. That being said, we know there are amazing people who may still
-want to donate just to show their appreciation. Thank you very much in
-advance!
+donations. That being said, we know there are amazing people who may still want
+to donate just to show their appreciation. Thank you very much in advance!
 
-We accept donations through Ko-fi, Paypal, Patreon, GitHub Sponsorships,
-and various cryptocurrencies. You can use the buttons below to donate
-through your method of choice.
+We accept donations through Ko-fi, Paypal, Patreon, GitHub Sponsorships, and
+various cryptocurrencies. You can use the buttons below to donate through your
+method of choice.
 
 |   Donate With   |                      Address                      |
 | :-------------: | :-----------------------------------------------: |
@@ -183,7 +185,8 @@ through your method of choice.
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people
+([emoji key](https://allcontributors.org/docs/en/emoji-key)):
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -199,4 +202,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the
+[all-contributors](https://github.com/all-contributors/all-contributors)
+specification. Contributions of any kind welcome!

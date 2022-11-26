@@ -10,60 +10,60 @@ import { readJson, readYaml } from '#lib/utils';
  * @returns The YAML or JSON file provided options with anything passed through the CLI overriding it.
  */
 export async function parseOptionsFile(cliOptions: Options) {
-	const npmDeprecateRcExists = await fileExistsAsync(npmDeprecateRcPath);
-	const npmDeprecateRcJsonExists = await fileExistsAsync(npmDeprecateRcJsonPath);
-	const npmDeprecateRcYmlExists = await fileExistsAsync(npmDeprecateRcYmlPath);
-	const npmDeprecateRcYamlExists = await fileExistsAsync(npmDeprecateRcYamlPath);
+  const npmDeprecateRcExists = await fileExistsAsync(npmDeprecateRcPath);
+  const npmDeprecateRcJsonExists = await fileExistsAsync(npmDeprecateRcJsonPath);
+  const npmDeprecateRcYmlExists = await fileExistsAsync(npmDeprecateRcYmlPath);
+  const npmDeprecateRcYamlExists = await fileExistsAsync(npmDeprecateRcYamlPath);
 
-	let options = cliOptions;
+  let options = cliOptions;
 
-	if (npmDeprecateRcYamlExists || npmDeprecateRcYmlExists) {
-		try {
-			const fileOptions = await readYaml<Options>(npmDeprecateRcYamlExists ? npmDeprecateRcYamlPath : npmDeprecateRcYmlPath);
+  if (npmDeprecateRcYamlExists || npmDeprecateRcYmlExists) {
+    try {
+      const fileOptions = await readYaml<Options>(npmDeprecateRcYamlExists ? npmDeprecateRcYamlPath : npmDeprecateRcYmlPath);
 
-			options = {
-				...fileOptions,
-				...options,
-				package: [...(fileOptions.package ?? []), ...(options.package ?? [])]
-			};
-		} catch (error) {
-			logVerboseError({
-				text: ['Failed to read yaml config file'],
-				verbose: options.verbose,
-				verboseText: [
-					'Attempted to read options file:',
-					npmDeprecateRcYamlExists ? npmDeprecateRcYamlPath : npmDeprecateRcYmlPath,
-					'',
-					'Full error: ',
-					(error as Error).message
-				],
-				exitAfterLog: true
-			});
-		}
-	} else if (npmDeprecateRcExists || npmDeprecateRcJsonExists) {
-		try {
-			const fileOptions = await readJson<Options>(npmDeprecateRcExists ? npmDeprecateRcPath : npmDeprecateRcJsonPath);
+      options = {
+        ...fileOptions,
+        ...options,
+        package: [...(fileOptions.package ?? []), ...(options.package ?? [])]
+      };
+    } catch (error) {
+      logVerboseError({
+        text: ['Failed to read yaml config file'],
+        verbose: options.verbose,
+        verboseText: [
+          'Attempted to read options file:',
+          npmDeprecateRcYamlExists ? npmDeprecateRcYamlPath : npmDeprecateRcYmlPath,
+          '',
+          'Full error: ',
+          (error as Error).message
+        ],
+        exitAfterLog: true
+      });
+    }
+  } else if (npmDeprecateRcExists || npmDeprecateRcJsonExists) {
+    try {
+      const fileOptions = await readJson<Options>(npmDeprecateRcExists ? npmDeprecateRcPath : npmDeprecateRcJsonPath);
 
-			options = {
-				...fileOptions,
-				...options,
-				package: [...(fileOptions.package ?? []), ...(options.package ?? [])]
-			};
-		} catch (error) {
-			logVerboseError({
-				text: ['Failed to read json config file'],
-				verbose: options.verbose,
-				verboseText: [
-					'Attempted to read options file:',
-					npmDeprecateRcExists ? npmDeprecateRcPath : npmDeprecateRcJsonPath,
-					'',
-					'Full error: ',
-					(error as Error).message
-				],
-				exitAfterLog: true
-			});
-		}
-	}
+      options = {
+        ...fileOptions,
+        ...options,
+        package: [...(fileOptions.package ?? []), ...(options.package ?? [])]
+      };
+    } catch (error) {
+      logVerboseError({
+        text: ['Failed to read json config file'],
+        verbose: options.verbose,
+        verboseText: [
+          'Attempted to read options file:',
+          npmDeprecateRcExists ? npmDeprecateRcPath : npmDeprecateRcJsonPath,
+          '',
+          'Full error: ',
+          (error as Error).message
+        ],
+        exitAfterLog: true
+      });
+    }
+  }
 
-	return options;
+  return options;
 }
