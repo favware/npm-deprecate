@@ -7,7 +7,7 @@ import { readJson, readYaml } from '#lib/utils';
 /**
  * Parses a YAML or JSON options file and merges that with CLI provided options
  * @param cliOptions The base CLI options to merge with the options found in a YAML or JSON file, if any
- * @returns The YAML or JSON file provided options with anything passed through the CLI overriding it. Also calls {@link transformOptionsDistPathToFileUrl}
+ * @returns The YAML or JSON file provided options with anything passed through the CLI overriding it.
  */
 export async function parseOptionsFile(cliOptions: Options) {
 	const npmDeprecateRcExists = await fileExistsAsync(npmDeprecateRcPath);

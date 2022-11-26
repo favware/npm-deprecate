@@ -3,6 +3,7 @@
 import { checks } from '#commands/checks';
 import { deprecatePackages } from '#commands/deprecate';
 import { cliRootDir, indent } from '#lib/constants';
+import { hydrateDefaultOptions } from '#lib/hydrateDefaultOptions';
 import { logVerboseInfo } from '#lib/logVerbose';
 import { parseOptionsFile } from '#lib/optionsParser';
 import { doActionAndLog } from '#lib/utils';
@@ -21,24 +22,19 @@ const command = new Command()
 	)
 	.option(
 		'-d, --deprecate-dist-tag [deprecateDistTag]',
-		'Whether the version that is in the current dist tags should be preserved or not. By default dist tags are preserved. When set to `true`, dist tags are pruned.',
-		false
+		'Whether the version that is in the current dist tags should be preserved or not. By default dist tags are preserved. When set to `true`, dist tags are pruned.'
 	)
-	.option(
-		'-m, --message [message]',
-		'A custom message to show for all the deprecated versions.',
-		'This version has been automatically deprecated by @favware/npm-deprecate. Please use a newer version.'
-	)
+	.option('-m, --message [message]', 'A custom message to show for all the deprecated versions.')
 	.option('-v, --verbose', 'Print verbose information', false)
 	.option(
 		'-p, --package <packages...>',
 		`Repeatable, each will be treated as another package. The packages that should be deprecated`,
-		(value: string, previous: string[]) => previous.concat([value]),
-		[]
+		(value: string, previous: string[]) => previous.concat([value])
 	);
 
 const program = command.parse(process.argv);
-const options = await parseOptionsFile(program.opts());
+let options = await parseOptionsFile(program.opts());
+options = hydrateDefaultOptions(options);
 
 logVerboseInfo(
 	[
