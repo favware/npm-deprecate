@@ -1,0 +1,5 @@
+name: npm-deprecate
+org: favware
+packagePath: .
+monoRepo: false
+tagTemplate: v{{new-version}}

@@ -1,110 +1,111 @@
 {
-	"name": "@favware/npm-deprecate",
-	"version": "1.0.5",
-	"description": "Programmatically deprecate your NPM published packages",
-	"author": "@favware",
-	"license": "MIT",
-	"type": "module",
-	"main": "dist/cli.js",
-	"bin": {
-		"nd": "./dist/cli.js",
-		"npm-deprecate": "./dist/cli.js"
-	},
-	"imports": {
-		"#commands/*": "./dist/commands/*.js",
-		"#lib/*": "./dist/lib/*.js",
-		"#root/*": "./dist/*.js"
-	},
-	"sideEffects": "false",
-	"files": [
-		"dist",
-		"!dist/*.tsbuildinfo",
-		"!dist/**/*.js.map",
-		"!dist/**/*.d.ts",
-		"!dist/**/*.d.ts.map"
-	],
-	"scripts": {
-		"lint": "eslint src --ext ts --fix",
-		"debug": "node . -v --dist .\\build\\",
-		"format": "prettier --write src/**/*.ts",
-		"update": "yarn upgrade-interactive --latest",
-		"clean": "node scripts/clean.mjs",
-		"build": "tsc -b src",
-		"watch": "tsc -b src -w",
-		"sversion": "standard-version",
-		"prepare": "husky install .github/husky",
-		"prepublishOnly": "yarn build"
-	},
-	"dependencies": {
-		"@sapphire/fetch": "^2.4.1",
-		"@sapphire/utilities": "^3.11.0",
-		"colorette": "^2.0.19",
-		"commander": "^9.4.1",
-		"js-yaml": "^4.1.0",
-		"micromatch": "^4.0.5",
-		"npm-package-arg": "^10.0.0",
-		"npm-registry-fetch": "^14.0.2"
-	},
-	"devDependencies": {
-		"@commitlint/cli": "^17.3.0",
-		"@commitlint/config-conventional": "^17.3.0",
-		"@sapphire/eslint-config": "^4.3.8",
-		"@sapphire/prettier-config": "^1.4.4",
-		"@sapphire/ts-config": "^3.3.4",
-		"@types/js-yaml": "^4.0.5",
-		"@types/micromatch": "^4.0.2",
-		"@types/node": "^18.11.9",
-		"@types/node-fetch": "^2.6.2",
-		"@types/npm-package-arg": "^6.1.1",
-		"@types/npm-registry-fetch": "^8.0.4",
-		"@typescript-eslint/eslint-plugin": "^5.44.0",
-		"@typescript-eslint/parser": "^5.44.0",
-		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-prettier": "^4.2.1",
-		"husky": "^8.0.2",
-		"lint-staged": "^13.0.4",
-		"prettier": "^2.8.0",
-		"pretty-quick": "^3.1.3",
-		"standard-version": "^9.5.0",
-		"typescript": "^4.9.3"
-	},
-	"resolutions": {
-		"ansi-regex": "^5.0.1",
-		"minimist": "^1.2.7"
-	},
-	"engines": {
-		"node": ">=16",
-		"npm": ">=7.24.2"
-	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/favware/npm-deprecate.git"
-	},
-	"bugs": {
-		"url": "https://github.com/favware/npm-deprecate/issues"
-	},
-	"homepage": "https://github.com/favware/npm-deprecate",
-	"commitlint": {
-		"extends": [
-			"@commitlint/config-conventional"
-		]
-	},
-	"lint-staged": {
-		"*.{mjs,js,ts}": "eslint --fix --ext mjs,js,ts"
-	},
-	"config": {
-		"commitizen": {
-			"path": "./node_modules/cz-conventional-changelog"
-		}
-	},
-	"publishConfig": {
-		"access": "public"
-	},
-	"eslintConfig": {
-		"extends": "@sapphire"
-	},
-	"prettier": "@sapphire/prettier-config",
-	"packageManager": "yarn@3.3.0"
+  "name": "@favware/npm-deprecate",
+  "version": "1.0.5",
+  "description": "Programmatically deprecate your NPM published packages",
+  "author": "@favware",
+  "license": "MIT",
+  "type": "module",
+  "main": "dist/cli.js",
+  "bin": {
+    "nd": "./dist/cli.js",
+    "npm-deprecate": "./dist/cli.js"
+  },
+  "imports": {
+    "#commands/*": "./dist/commands/*.js",
+    "#lib/*": "./dist/lib/*.js",
+    "#root/*": "./dist/*.js"
+  },
+  "sideEffects": "false",
+  "files": [
+    "dist",
+    "!dist/*.tsbuildinfo",
+    "!dist/**/*.js.map",
+    "!dist/**/*.d.ts",
+    "!dist/**/*.d.ts.map"
+  ],
+  "scripts": {
+    "lint": "eslint src --ext ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "update": "yarn upgrade-interactive --latest",
+    "clean": "node scripts/clean.mjs",
+    "build": "tsc -b src",
+    "watch": "tsc -b src -w",
+    "bump": "cliff-jumper",
+    "check-update": "cliff-jumper --dry-run",
+    "postinstall": "husky install .github/husky",
+    "prepack": "yarn build && pinst --disable",
+    "postpack": "pinst --enable"
+  },
+  "dependencies": {
+    "@sapphire/fetch": "^2.4.1",
+    "@sapphire/utilities": "^3.11.0",
+    "colorette": "^2.0.19",
+    "commander": "^9.4.1",
+    "js-yaml": "^4.1.0",
+    "micromatch": "^4.0.5",
+    "npm-package-arg": "^10.0.0",
+    "npm-registry-fetch": "^14.0.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0",
+    "@favware/cliff-jumper": "^1.9.0",
+    "@sapphire/eslint-config": "^4.3.8",
+    "@sapphire/prettier-config": "^1.4.4",
+    "@sapphire/ts-config": "^3.3.4",
+    "@types/js-yaml": "^4.0.5",
+    "@types/micromatch": "^4.0.2",
+    "@types/node": "^18.11.9",
+    "@types/node-fetch": "^2.6.2",
+    "@types/npm-package-arg": "^6.1.1",
+    "@types/npm-registry-fetch": "^8.0.4",
+    "@typescript-eslint/eslint-plugin": "^5.44.0",
+    "@typescript-eslint/parser": "^5.44.0",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^8.28.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "pinst": "^3.0.0",
+    "prettier": "^2.7.1",
+    "pretty-quick": "^3.1.3",
+    "typescript": "^4.9.3"
+  },
+  "resolutions": {
+    "acorn": "^8.8.1",
+    "ansi-regex": "^5.0.1",
+    "minimist": "^1.2.7"
+  },
+  "engines": {
+    "node": ">=16"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/favware/npm-deprecate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/favware/npm-deprecate/issues"
+  },
+  "homepage": "https://github.com/favware/npm-deprecate",
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "lint-staged": {
+    "*.{mjs,js,ts}": "eslint --fix --ext mjs,js,ts"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "eslintConfig": {
+    "extends": "@sapphire"
+  },
+  "packageManager": "yarn@3.3.0"
 }
