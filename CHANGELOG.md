@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file.
 
+# [1.0.7](https://github.com/favware/npm-deprecate/compare/v1.0.6...v1.0.7) - (2022-12-03)
+
+## 🐛 Bug Fixes
+
+- Fixed parsing of packages provided through CLI ([8fd2c74](https://github.com/favware/npm-deprecate/commit/8fd2c745108f2993e8e2b2d1d2ff0f71cdd89987))
+
 # [1.0.6](https://github.com/favware/npm-deprecate/compare/v1.0.5...v1.0.6) - (2022-11-26)
 
 ## 🐛 Bug Fixes
