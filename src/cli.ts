@@ -29,7 +29,7 @@ const command = new Command()
   .option(
     '-p, --package <packages...>',
     `Repeatable, each will be treated as another package. The packages that should be deprecated`,
-    (value: string, previous: string[]) => previous.concat([value])
+    (value: string, previous: string[]) => (previous ?? []).concat([value])
   );
 
 const program = command.parse(process.argv);
