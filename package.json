@@ -55,12 +55,12 @@
     "@sapphire/ts-config": "^3.3.4",
     "@types/js-yaml": "^4.0.5",
     "@types/micromatch": "^4.0.2",
-    "@types/node": "^18.15.0",
+    "@types/node": "^18.15.3",
     "@types/node-fetch": "^2.6.2",
     "@types/npm-package-arg": "^6.1.1",
     "@types/npm-registry-fetch": "^8.0.4",
-    "@typescript-eslint/eslint-plugin": "^5.54.1",
-    "@typescript-eslint/parser": "^5.54.1",
+    "@typescript-eslint/eslint-plugin": "^5.55.0",
+    "@typescript-eslint/parser": "^5.55.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.36.0",
     "eslint-config-prettier": "^8.7.0",
@@ -107,5 +107,5 @@
   "eslintConfig": {
     "extends": "@sapphire"
   },
-  "packageManager": "yarn@3.4.1"
+  "packageManager": "yarn@3.5.0"
 }
