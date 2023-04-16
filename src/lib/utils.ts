@@ -1,4 +1,4 @@
-import { Awaitable, isThenable } from '@sapphire/utilities';
+import { isThenable, type Awaitable } from '@sapphire/utilities';
 import { cyan, green, red } from 'colorette';
 import type { PathLike } from 'fs';
 import { readFile } from 'fs/promises';
