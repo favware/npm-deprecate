@@ -45,7 +45,7 @@
     "js-yaml": "^4.1.0",
     "micromatch": "^4.0.5",
     "npm-package-arg": "^10.1.0",
-    "npm-registry-fetch": "^14.0.5"
+    "npm-registry-fetch": "^15.0.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.7",
