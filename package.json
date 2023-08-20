@@ -44,7 +44,7 @@
     "commander": "^11.0.0",
     "js-yaml": "^4.1.0",
     "micromatch": "^4.0.5",
-    "npm-package-arg": "^10.1.0",
+    "npm-package-arg": "^11.0.0",
     "npm-registry-fetch": "^15.0.0"
   },
   "devDependencies": {
