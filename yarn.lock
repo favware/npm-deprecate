@@ -346,7 +346,7 @@ __metadata:
     js-yaml: ^4.1.0
     lint-staged: ^13.3.0
     micromatch: ^4.0.5
-    npm-package-arg: ^10.1.0
+    npm-package-arg: ^11.0.0
     npm-registry-fetch: ^15.0.0
     pinst: ^3.0.0
     prettier: ^3.0.2
@@ -2415,6 +2415,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"hosted-git-info@npm:^7.0.0":
+  version: 7.0.0
+  resolution: "hosted-git-info@npm:7.0.0"
+  dependencies:
+    lru-cache: ^10.0.1
+  checksum: b892237a3867f827f97e229e2b6ddf17d3ed674f003475c12ecbfc6269416db3a643c1ee3c5d4a989e3f3a596dd1470ee4017fe911710e47aeb7d9319737c05e
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.1":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
@@ -2993,6 +3002,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"lru-cache@npm:^10.0.1":
+  version: 10.0.1
+  resolution: "lru-cache@npm:10.0.1"
+  checksum: 06f8d0e1ceabd76bb6f644a26dbb0b4c471b79c7b514c13c6856113879b3bf369eb7b497dad4ff2b7e2636db202412394865b33c332100876d838ad1372f0181
+  languageName: node
+  linkType: hard
+
 "lru-cache@npm:^6.0.0":
   version: 6.0.0
   resolution: "lru-cache@npm:6.0.0"
@@ -3373,7 +3389,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-package-arg@npm:^10.0.0, npm-package-arg@npm:^10.1.0":
+"npm-package-arg@npm:^10.0.0":
   version: 10.1.0
   resolution: "npm-package-arg@npm:10.1.0"
   dependencies:
@@ -3382,6 +3398,18 @@ __metadata:
     semver: ^7.3.5
     validate-npm-package-name: ^5.0.0
   checksum: 8fe4b6a742502345e4836ed42fdf26c544c9f75563c476c67044a481ada6e81f71b55462489c7e1899d516e4347150e58028036a90fa11d47e320bcc9365fd30
+  languageName: node
+  linkType: hard
+
+"npm-package-arg@npm:^11.0.0":
+  version: 11.0.0
+  resolution: "npm-package-arg@npm:11.0.0"
+  dependencies:
+    hosted-git-info: ^7.0.0
+    proc-log: ^3.0.0
+    semver: ^7.3.5
+    validate-npm-package-name: ^5.0.0
+  checksum: d88dd22929c970ed29ccc32c2f329e75defc065e0a501a81545753c0c59b7d7a97ec0bb8e80c33da9cf28c1ded4f8a91801c467cf192f894bb5283eb48419b33
   languageName: node
   linkType: hard
 
