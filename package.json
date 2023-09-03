@@ -52,7 +52,7 @@
     "@sapphire/ts-config": "^5.0.0",
     "@types/js-yaml": "^4.0.5",
     "@types/micromatch": "^4.0.2",
-    "@types/node": "^18.17.12",
+    "@types/node": "^18.17.14",
     "@types/node-fetch": "^2.6.4",
     "@types/npm-package-arg": "^6.1.1",
     "@types/npm-registry-fetch": "^8.0.4",
