@@ -32,7 +32,7 @@
     "prepack": "yarn build"
   },
   "dependencies": {
-    "@sapphire/fetch": "^2.4.2",
+    "@sapphire/fetch": "^3.0.0",
     "@sapphire/utilities": "^3.14.0",
     "colorette": "^2.0.20",
     "commander": "^11.1.0",
