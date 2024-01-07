@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@sapphire/fetch": "^3.0.1",
-    "@sapphire/utilities": "^3.15.1",
+    "@sapphire/utilities": "^3.15.2",
     "colorette": "^2.0.20",
     "commander": "^11.1.0",
     "js-yaml": "^4.1.0",
@@ -42,8 +42,8 @@
     "npm-registry-fetch": "^16.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.4.3",
-    "@commitlint/config-conventional": "^18.4.3",
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
     "@favware/cliff-jumper": "^2.2.3",
     "@sapphire/eslint-config": "^5.0.3",
     "@sapphire/prettier-config": "^2.0.0",
@@ -54,8 +54,8 @@
     "@types/node-fetch": "^2.6.10",
     "@types/npm-package-arg": "^6.1.4",
     "@types/npm-registry-fetch": "^8.0.7",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.56.0",
     "eslint-config-prettier": "^9.1.0",
