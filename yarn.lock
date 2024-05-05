@@ -334,7 +334,7 @@ __metadata:
     lint-staged: "npm:^15.2.2"
     micromatch: "npm:^4.0.5"
     npm-package-arg: "npm:^11.0.2"
-    npm-registry-fetch: "npm:^16.2.1"
+    npm-registry-fetch: "npm:^17.0.1"
     prettier: "npm:^3.2.5"
     typescript: "npm:^5.4.5"
   bin:
@@ -428,10 +428,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@npmcli/redact@npm:^1.1.0":
-  version: 1.1.0
-  resolution: "@npmcli/redact@npm:1.1.0"
-  checksum: 10/c6c81c2d1463bc9f30d40f983a3dbb3144503030ff455e5a8904ff82ca39b95e46e9830fa4413f17f9a77604cdbb1f2370c53dd0ba4841cf24b79843e1fcf825
+"@npmcli/redact@npm:^2.0.0":
+  version: 2.0.0
+  resolution: "@npmcli/redact@npm:2.0.0"
+  checksum: 10/0ec0ab5f988309607e262d294ae8ed5386c8582c4752ceec6a02202b7875a6ad93dcf7d1c7283f3e679d89924b933aebec499814707c60f43fba2ab504fd8adb
   languageName: node
   linkType: hard
 
@@ -3125,11 +3125,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-registry-fetch@npm:^16.2.1":
-  version: 16.2.1
-  resolution: "npm-registry-fetch@npm:16.2.1"
+"npm-registry-fetch@npm:^17.0.1":
+  version: 17.0.1
+  resolution: "npm-registry-fetch@npm:17.0.1"
   dependencies:
-    "@npmcli/redact": "npm:^1.1.0"
+    "@npmcli/redact": "npm:^2.0.0"
     make-fetch-happen: "npm:^13.0.0"
     minipass: "npm:^7.0.2"
     minipass-fetch: "npm:^3.0.0"
@@ -3137,7 +3137,7 @@ __metadata:
     minizlib: "npm:^2.1.2"
     npm-package-arg: "npm:^11.0.0"
     proc-log: "npm:^4.0.0"
-  checksum: 10/eb5a939f8f1c187b8d739e41bbc37f5d376480e2479f61a4f55af5aa00262a9a55e0053a0cd673d2945716863aaef6afbf97ebbb33fb194259573151c4dff37b
+  checksum: 10/32220bdb8739325059388f69d10bce00db9edde86843622d5e557751c52ce66c6e788faee34d27dba497166d3777bac68d70fadce820b647fe144b0ec3529397
   languageName: node
   linkType: hard
 
