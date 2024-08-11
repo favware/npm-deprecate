@@ -42,7 +42,7 @@
     "npm-registry-fetch": "^17.1.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.3.0",
+    "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@favware/cliff-jumper": "^4.0.3",
     "@sapphire/eslint-config": "^5.0.5",
@@ -50,7 +50,7 @@
     "@sapphire/ts-config": "^5.0.1",
     "@types/js-yaml": "^4.0.9",
     "@types/micromatch": "^4.0.9",
-    "@types/node": "^20.14.14",
+    "@types/node": "^20.14.15",
     "@types/node-fetch": "^2.6.11",
     "@types/npm-package-arg": "^6.1.4",
     "@types/npm-registry-fetch": "^8.0.7",
