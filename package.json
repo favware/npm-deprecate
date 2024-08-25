@@ -37,20 +37,20 @@
     "colorette": "^2.0.20",
     "commander": "^12.1.0",
     "js-yaml": "^4.1.0",
-    "micromatch": "^4.0.7",
+    "micromatch": "^4.0.8",
     "npm-package-arg": "^11.0.3",
     "npm-registry-fetch": "^17.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.4.0",
     "@commitlint/config-conventional": "^19.2.2",
-    "@favware/cliff-jumper": "^4.0.3",
+    "@favware/cliff-jumper": "^4.1.0",
     "@sapphire/eslint-config": "^5.0.5",
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/ts-config": "^5.0.1",
     "@types/js-yaml": "^4.0.9",
     "@types/micromatch": "^4.0.9",
-    "@types/node": "^20.16.0",
+    "@types/node": "^20.16.1",
     "@types/node-fetch": "^2.6.11",
     "@types/npm-package-arg": "^6.1.4",
     "@types/npm-registry-fetch": "^8.0.7",
@@ -100,5 +100,5 @@
   "eslintConfig": {
     "extends": "@sapphire"
   },
-  "packageManager": "yarn@4.4.0"
+  "packageManager": "yarn@4.4.1"
 }
