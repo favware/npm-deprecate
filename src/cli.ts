@@ -18,7 +18,7 @@ const command = new Command()
   .version(packageJson.version)
   .option(
     '-n, --name <nameGlob>',
-    'A glob pattern that will determine which packages are deprecated. Anything that passes [Micromatch](https://www.npmjs.com/package/micromatch) will work here. For example set `*dev*` to match `13.2.0-dev.123a`.'
+    'A glob pattern that will determine which packages are deprecated. Anything that passes [picomatch](https://www.npmjs.com/package/picomatch) or [micromatch](https://www.npmjs.com/package/micromatch) will work here. For example set `*dev*` to match `13.2.0-dev.123a`.'
   )
   .option(
     '-d, --deprecate-dist-tag [deprecateDistTag]',
