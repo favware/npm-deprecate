@@ -3,7 +3,7 @@ import type { NpmRegistry, Options } from '#lib/interfaces';
 import { logVerboseError, logVerboseInfo } from '#lib/logVerbose';
 import { fetch, FetchResultTypes, QueryError } from '@sapphire/fetch';
 import { isNullish } from '@sapphire/utilities';
-import micromatch from 'micromatch';
+import picomatch from 'picomatch';
 import npa from 'npm-package-arg';
 import npmFetch from 'npm-registry-fetch';
 
@@ -49,6 +49,8 @@ export async function deprecatePackages(options: Options): Promise<void> {
   const fetchPromises: Promise<unknown>[] = [];
   let amountVersionsChanged = 0;
 
+  const isVersionMatch = picomatch(options.name, { nocase: true });
+
   for (const pkg of registryJsonFiles) {
     const distTags = Object.values(pkg['dist-tags']);
     const packageArg = npa(pkg.name);
@@ -60,7 +62,7 @@ export async function deprecatePackages(options: Options): Promise<void> {
 
       if (!options.deprecateDistTag && distTags.includes(version.version)) continue;
 
-      if (!micromatch.isMatch(version.version, options.name, { nocase: true })) continue;
+      if (!isVersionMatch(version.version)) continue;
 
       logVerboseInfo([`Deprecating version ${version.name}@${version.version}`], options.verbose);
 
