@@ -1,11 +1,12 @@
 name: Publish
+run-name: Publish @favware/npm-deprecate
 
 on:
   workflow_dispatch:
 
 jobs:
   PublishPackage:
-    name: Publish @sapphire/framework
+    name: Publish @favware/npm-deprecate
     runs-on: ubuntu-latest
     if: github.repository_owner == 'favware'
     steps:
