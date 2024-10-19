@@ -149,10 +149,10 @@ jobs:
     steps:
       - name: Checkout Project
         uses: actions/checkout@v2
-      - name: Use Node.js v16
+      - name: Use Node.js v18
         uses: actions/setup-node@v2
         with:
-          node-version: 16
+          node-version: 18
           cache: yarn
           registry-url: https://registry.npmjs.org/
       - name: Install Dependencies if Cache Miss
