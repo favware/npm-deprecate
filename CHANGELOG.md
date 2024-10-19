@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+# [2.0.0](https://github.com/favware/npm-deprecate/compare/v1.0.7...v2.0.0) - (2024-10-19)
+
+## 🏠 Refactor
+
+- Replace `micromatch` with `picomatch` ([547fddf](https://github.com/favware/npm-deprecate/commit/547fddf77831f61670e0930b6565082b47e96e7e)) ([#284](https://github.com/favware/npm-deprecate/pull/284) by @SukkaW)
+
+## 🐛 Bug Fixes
+
+- Bump minimum required NodeJS version to v18.17.0 to match minimum version of `npm-package-arg` and `npm-registry-fetch` dependencies ([52fd648](https://github.com/favware/npm-deprecate/commit/52fd64897853e81dd63a33fc9dac5c070a1404c0))
+  - 💥 **BREAKING CHANGE:** Minimum NodeJS version is now v18.17.0
+- **deps:** Update dependency npm-package-arg to v12 ([51fb750](https://github.com/favware/npm-deprecate/commit/51fb750c9cd150e5104c9e6eb20527c56d96d41a)) ([#282](https://github.com/favware/npm-deprecate/pull/282) by @renovate[bot])
+- **deps:** Update dependency npm-registry-fetch to v18 ([b30f3e8](https://github.com/favware/npm-deprecate/commit/b30f3e8258d972b2c7497e6f01da77638bbbe85f)) ([#283](https://github.com/favware/npm-deprecate/pull/283) by @renovate[bot])
+- **deps:** Update all non-major dependencies ([ebaaf5b](https://github.com/favware/npm-deprecate/commit/ebaaf5bf3101c128521d596965fe09454919db4a)) ([#274](https://github.com/favware/npm-deprecate/pull/274) by @renovate[bot])
+- **deps:** Update all non-major dependencies ([3c712e1](https://github.com/favware/npm-deprecate/commit/3c712e11c2bc042f46c0978ac0ab3bb65253488f)) ([#262](https://github.com/favware/npm-deprecate/pull/262) by @renovate[bot])
+- **deps:** Update dependency npm-registry-fetch to v17 ([bc26a92](https://github.com/favware/npm-deprecate/commit/bc26a925e9b471363e06664763d97ce51a20dcf3)) ([#258](https://github.com/favware/npm-deprecate/pull/258) by @renovate[bot])
+- **deps:** Update dependency commander to v12 ([ee59c6e](https://github.com/favware/npm-deprecate/commit/ee59c6eb31c9ff52c795926bbbef93df683a7837)) ([#237](https://github.com/favware/npm-deprecate/pull/237) by @renovate[bot])
+- **deps:** Update all non-major dependencies ([8a30938](https://github.com/favware/npm-deprecate/commit/8a30938335d8dfe0ad1a321fc4ac23d9d52f35e3)) ([#234](https://github.com/favware/npm-deprecate/pull/234) by @renovate[bot])
+- **deps:** Update all non-major dependencies ([3c460f5](https://github.com/favware/npm-deprecate/commit/3c460f5ffa7e740855d1ae581a486158111ee3f2)) ([#231](https://github.com/favware/npm-deprecate/pull/231) by @renovate[bot])
+- **deps:** Update all non-major dependencies ([94d6a87](https://github.com/favware/npm-deprecate/commit/94d6a87e122b89ff8cd2f67e32ac6ce79f3c35e2)) ([#229](https://github.com/favware/npm-deprecate/pull/229) by @renovate[bot])
+- **deps:** Update dependency @sapphire/fetch to v3 ([f108b36](https://github.com/favware/npm-deprecate/commit/f108b36886382236496c5517b7326b5de3233036)) ([#228](https://github.com/favware/npm-deprecate/pull/228) by @renovate[bot])
+- **deps:** Update dependency npm-registry-fetch to v16 ([157af70](https://github.com/favware/npm-deprecate/commit/157af706b75da717f53be340aabe3ca5744b038f)) ([#199](https://github.com/favware/npm-deprecate/pull/199) by @renovate[bot])
+- **deps:** Update dependency npm-package-arg to v11 ([8a78982](https://github.com/favware/npm-deprecate/commit/8a78982806a85513caaaffecfdfadea7b838ea8a)) ([#198](https://github.com/favware/npm-deprecate/pull/198) by @renovate[bot])
+- **deps:** Update dependency npm-registry-fetch to v15 ([409262c](https://github.com/favware/npm-deprecate/commit/409262c73bb355db2793c44226a5347d93da1917)) ([#192](https://github.com/favware/npm-deprecate/pull/192) by @renovate[bot])
+- **deps:** Update dependency commander to v11 ([29d5ea8](https://github.com/favware/npm-deprecate/commit/29d5ea8e143121fdbeb4dd4ea5335c8b73a63eed)) ([#178](https://github.com/favware/npm-deprecate/pull/178) by @renovate[bot])
+- **deps:** Update dependency commander to v10 ([fc3453d](https://github.com/favware/npm-deprecate/commit/fc3453d99d6d5bcccac470c8d2abd047afeac14d)) ([#149](https://github.com/favware/npm-deprecate/pull/149) by @renovate[bot])
+
 # [1.0.7](https://github.com/favware/npm-deprecate/compare/v1.0.6...v1.0.7) - (2022-12-03)
 
 ## 🐛 Bug Fixes
