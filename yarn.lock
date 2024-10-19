@@ -353,7 +353,7 @@ __metadata:
     js-yaml: "npm:^4.1.0"
     lint-staged: "npm:^15.2.10"
     micromatch: "npm:^4.0.8"
-    npm-package-arg: "npm:^11.0.3"
+    npm-package-arg: "npm:^12.0.0"
     npm-registry-fetch: "npm:^18.0.2"
     prettier: "npm:^3.3.3"
     typescript: "npm:^5.5.2"
@@ -1056,15 +1056,6 @@ __metadata:
   dependencies:
     fill-range: "npm:^7.1.1"
   checksum: 10/fad11a0d4697a27162840b02b1fad249c1683cbc510cd5bf1a471f2f8085c046d41094308c577a50a03a579dd99d5a6b3724c4b5e8b14df2c4443844cfcda2c6
-  languageName: node
-  linkType: hard
-
-"builtins@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "builtins@npm:5.0.0"
-  dependencies:
-    semver: "npm:^7.0.0"
-  checksum: 10/6c315fc8b88fa5413752bb19278855498fa8d29e4959d1b57506fb2e095250412d06d0d139317fa3e7e197de60bd2318694baaa4d0aff8288df149a24e29c84a
   languageName: node
   linkType: hard
 
@@ -2314,15 +2305,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hosted-git-info@npm:^7.0.0":
-  version: 7.0.0
-  resolution: "hosted-git-info@npm:7.0.0"
-  dependencies:
-    lru-cache: "npm:^10.0.1"
-  checksum: 10/83ba4f07c29e33385e096238343d0b1ca708ec2304d49358c0c7247be146aaf3044b061ade38af7e6545416260e3132bfb71a8eddebc1658d99106b84a3e8591
-  languageName: node
-  linkType: hard
-
 "hosted-git-info@npm:^8.0.0":
   version: 8.0.0
   resolution: "hosted-git-info@npm:8.0.0"
@@ -3148,18 +3130,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npm-package-arg@npm:^11.0.3":
-  version: 11.0.3
-  resolution: "npm-package-arg@npm:11.0.3"
-  dependencies:
-    hosted-git-info: "npm:^7.0.0"
-    proc-log: "npm:^4.0.0"
-    semver: "npm:^7.3.5"
-    validate-npm-package-name: "npm:^5.0.0"
-  checksum: 10/bacc863907edf98940286edc2fd80327901c1e8b34426d538cdc708ed66bc6567f06d742d838eaf35db6804347bb4ba56ca9cef032c4b52743b33e7a22a2678e
-  languageName: node
-  linkType: hard
-
 "npm-package-arg@npm:^12.0.0":
   version: 12.0.0
   resolution: "npm-package-arg@npm:12.0.0"
@@ -3441,13 +3411,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"proc-log@npm:^4.0.0":
-  version: 4.0.0
-  resolution: "proc-log@npm:4.0.0"
-  checksum: 10/8a1cf614c1d81c312fd34ebc83da3223c78fe5a8202f5f88761128e4d061a88502b7ee286d69a123ff2c2fcdf01e0dacc006d660745fc7267400853e1fdf8ccf
-  languageName: node
-  linkType: hard
-
 "proc-log@npm:^5.0.0":
   version: 5.0.0
   resolution: "proc-log@npm:5.0.0"
@@ -3612,7 +3575,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.0.0, semver@npm:^7.3.5, semver@npm:^7.5.2, semver@npm:^7.6.0, semver@npm:^7.6.3":
+"semver@npm:^7.3.5, semver@npm:^7.5.2, semver@npm:^7.6.0, semver@npm:^7.6.3":
   version: 7.6.3
   resolution: "semver@npm:7.6.3"
   bin:
@@ -4056,15 +4019,6 @@ __metadata:
   dependencies:
     punycode: "npm:^2.1.0"
   checksum: 10/b271ca7e3d46b7160222e3afa3e531505161c9a4e097febae9664e4b59912f4cbe94861361a4175edac3a03fee99d91e44b6a58c17a634bc5a664b19fc76fbcb
-  languageName: node
-  linkType: hard
-
-"validate-npm-package-name@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "validate-npm-package-name@npm:5.0.0"
-  dependencies:
-    builtins: "npm:^5.0.0"
-  checksum: 10/5342a994986199b3c28e53a8452a14b2bb5085727691ea7aa0d284a6606b127c371e0925ae99b3f1ef7cc7d2c9de75f52eb61a3d1cc45e39bca1e3a9444cbb4e
   languageName: node
   linkType: hard
 
