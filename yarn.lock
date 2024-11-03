@@ -332,12 +332,12 @@ __metadata:
     "@commitlint/config-conventional": "npm:^19.5.0"
     "@favware/cliff-jumper": "npm:^5.0.0"
     "@sapphire/eslint-config": "npm:^5.0.5"
-    "@sapphire/fetch": "npm:^3.0.3"
+    "@sapphire/fetch": "npm:^3.0.4"
     "@sapphire/prettier-config": "npm:^2.0.0"
     "@sapphire/ts-config": "npm:^5.0.1"
-    "@sapphire/utilities": "npm:^3.17.0"
+    "@sapphire/utilities": "npm:^3.18.0"
     "@types/js-yaml": "npm:^4.0.9"
-    "@types/node": "npm:^20.17.1"
+    "@types/node": "npm:^20.17.6"
     "@types/node-fetch": "npm:^2.6.11"
     "@types/npm-package-arg": "npm:^6.1.4"
     "@types/npm-registry-fetch": "npm:^8.0.7"
@@ -589,10 +589,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/fetch@npm:^3.0.3":
-  version: 3.0.3
-  resolution: "@sapphire/fetch@npm:3.0.3"
-  checksum: 10/4eed77aeb72d9a2fb4671b88e1e6d960c838ebd23d22735f78a385b295ed2938e348722b8b93da00aa8c9b1ec9a2e545b20d2f0100b5bd490c8f34734ae9831c
+"@sapphire/fetch@npm:^3.0.4":
+  version: 3.0.4
+  resolution: "@sapphire/fetch@npm:3.0.4"
+  checksum: 10/e140b262c9d2440504d914fae8a5652b222f9ba6c36c9cca6e77a78ea23667a44d689aa84f72c0a08e42224b4e046bfc63e7ade8e2225724febf4f743b5d0e8f
   languageName: node
   linkType: hard
 
@@ -622,10 +622,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@sapphire/utilities@npm:3.17.0, @sapphire/utilities@npm:^3.17.0":
+"@sapphire/utilities@npm:3.17.0":
   version: 3.17.0
   resolution: "@sapphire/utilities@npm:3.17.0"
   checksum: 10/cfdf604be06e1e4f7fd26f10c198586eef9012001b83dcc8178886d88145334db06e164725aadf5bfb065b39ecdefaa8286c695576e7674b5a3bc9280ce02e0d
+  languageName: node
+  linkType: hard
+
+"@sapphire/utilities@npm:^3.18.0":
+  version: 3.18.0
+  resolution: "@sapphire/utilities@npm:3.18.0"
+  checksum: 10/4185555696d97fa8b514118f94d66f5bd4c278fbc7ef70f3ee70505f8b90f865d2b8319a686739d78bf29711cc2e16aa99933f493515116e3226d466805c254a
   languageName: node
   linkType: hard
 
@@ -678,12 +685,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^20.17.1":
-  version: 20.17.1
-  resolution: "@types/node@npm:20.17.1"
+"@types/node@npm:*, @types/node@npm:^20.17.6":
+  version: 20.17.6
+  resolution: "@types/node@npm:20.17.6"
   dependencies:
     undici-types: "npm:~6.19.2"
-  checksum: 10/d1f4cd7158df97167953031f7245af3203f52b5f4965c175253b96489c7c55e4c2d4c8a697bb34211bfb99b8824cfcf6287e16cabdac6184a99eedcb26fdd432
+  checksum: 10/714b8b54951950cee662ce80492831ebc51f914a9adf88583cea777ea4d55b88827b2505ff2f53d2bb7753691aaab1b06c027a7b5c63eb153ad4acee1239690c
   languageName: node
   linkType: hard
 
@@ -883,12 +890,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"acorn@npm:^8.13.0":
-  version: 8.13.0
-  resolution: "acorn@npm:8.13.0"
+"acorn@npm:^8.14.0":
+  version: 8.14.0
+  resolution: "acorn@npm:8.14.0"
   bin:
     acorn: bin/acorn
-  checksum: 10/33e3a03114b02b3bc5009463b3d9549b31a90ee38ebccd5e66515830a02acf62a90edcc12abfb6c9fb3837b6c17a3ec9b72b3bf52ac31d8ad8248a4af871e0f5
+  checksum: 10/6df29c35556782ca9e632db461a7f97947772c6c1d5438a81f0c873a3da3a792487e83e404d1c6c25f70513e91aa18745f6eafb1fcc3a43ecd1920b21dd173d2
   languageName: node
   linkType: hard
 
