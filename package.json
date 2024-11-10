@@ -32,8 +32,8 @@
     "prepack": "yarn build"
   },
   "dependencies": {
-    "@sapphire/fetch": "^3.0.4",
-    "@sapphire/utilities": "^3.18.0",
+    "@sapphire/fetch": "^3.0.5",
+    "@sapphire/utilities": "^3.18.1",
     "colorette": "^2.0.20",
     "commander": "^12.1.0",
     "js-yaml": "^4.1.0",
@@ -49,7 +49,7 @@
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/ts-config": "^5.0.1",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.8.7",
+    "@types/node": "^22.9.0",
     "@types/node-fetch": "^2.6.11",
     "@types/npm-package-arg": "^6.1.4",
     "@types/npm-registry-fetch": "^8.0.7",
