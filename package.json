@@ -50,7 +50,7 @@
     "@sapphire/ts-config": "^5.0.1",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^22.9.0",
-    "@types/node-fetch": "^2.6.11",
+    "@types/node-fetch": "^2.6.12",
     "@types/npm-package-arg": "^6.1.4",
     "@types/npm-registry-fetch": "^8.0.7",
     "@types/picomatch": "^3.0.1",
