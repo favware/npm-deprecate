@@ -35,7 +35,7 @@
     "@sapphire/fetch": "^3.0.5",
     "@sapphire/utilities": "^3.18.1",
     "colorette": "^2.0.20",
-    "commander": "^12.1.0",
+    "commander": "^13.0.0",
     "js-yaml": "^4.1.0",
     "npm-package-arg": "^12.0.1",
     "npm-registry-fetch": "^18.0.2",
