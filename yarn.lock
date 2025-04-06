@@ -341,7 +341,7 @@ __metadata:
     "@types/node-fetch": "npm:^2.6.12"
     "@types/npm-package-arg": "npm:^6.1.4"
     "@types/npm-registry-fetch": "npm:^8.0.7"
-    "@types/picomatch": "npm:^3.0.2"
+    "@types/picomatch": "npm:^4.0.0"
     "@typescript-eslint/eslint-plugin": "npm:^7.18.0"
     "@typescript-eslint/parser": "npm:^7.18.0"
     colorette: "npm:^2.0.20"
@@ -722,10 +722,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/picomatch@npm:^3.0.2":
-  version: 3.0.2
-  resolution: "@types/picomatch@npm:3.0.2"
-  checksum: 10/da4e0e0f4437576dfd59b94f5868f89a2bd5ce4aaa57eb5dc601818885ac7bd03ccb3e8d3402a6820e5a3d63c86c7030031a5fdc67a0598d0675dea912b6512e
+"@types/picomatch@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "@types/picomatch@npm:4.0.0"
+  checksum: 10/a91827e5f8542f3336daa209b40eb349da8375b696245b593b8d15508752d16795cf66b7ee90c7e11767e85b06b610f0d134cbfec8595578f89c9d406b805933
   languageName: node
   linkType: hard
 
