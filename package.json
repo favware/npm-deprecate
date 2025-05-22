@@ -42,24 +42,24 @@
     "picomatch": "^4.0.2"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
+    "@commitlint/cli": "^19.8.1",
+    "@commitlint/config-conventional": "^19.8.1",
     "@favware/cliff-jumper": "^6.0.0",
-    "@sapphire/eslint-config": "^5.0.5",
+    "@sapphire/eslint-config": "^5.0.6",
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/ts-config": "^5.0.1",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.14.1",
+    "@types/node": "^22.15.21",
     "@types/node-fetch": "^2.6.12",
     "@types/npm-package-arg": "^6.1.4",
-    "@types/npm-registry-fetch": "^8.0.7",
+    "@types/npm-registry-fetch": "^8.0.8",
     "@types/picomatch": "^4.0.0",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.1",
-    "eslint-config-prettier": "^10.1.2",
-    "eslint-plugin-prettier": "^5.2.6",
+    "eslint-config-prettier": "^10.1.5",
+    "eslint-plugin-prettier": "^5.4.0",
     "lint-staged": "^16.0.0",
     "prettier": "^3.5.3",
     "typescript": "^5.6.3"
@@ -100,5 +100,5 @@
   "eslintConfig": {
     "extends": "@sapphire"
   },
-  "packageManager": "yarn@4.9.0"
+  "packageManager": "yarn@4.9.1"
 }
