@@ -87,10 +87,10 @@ export async function deprecatePackages(options: Options): Promise<void> {
           token: NodeAuthToken,
           userAgent: 'npm/6.14.14 node/v12.22.5 linux x64 workspaces/false',
           retry: {
-            fetchRetries: 2,
-            fetchRetryFactor: 10,
-            fetchRetryMaxtimeout: 60000,
-            fetchRetryMintimeout: 10000
+            retries: 2,
+            factor: 10,
+            maxTimeout: 60000,
+            minTimeout: 10000
           },
           headers: {
             'user-agent': 'npm/6.14.14 node/v12.22.5 linux x64 workspaces/false',
