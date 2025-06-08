@@ -49,7 +49,7 @@
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/ts-config": "^5.0.1",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.15.29",
+    "@types/node": "^22.15.30",
     "@types/node-fetch": "^2.6.12",
     "@types/npm-package-arg": "^6.1.4",
     "@types/npm-registry-fetch": "^8.0.8",
@@ -100,5 +100,5 @@
   "eslintConfig": {
     "extends": "@sapphire"
   },
-  "packageManager": "yarn@4.9.1"
+  "packageManager": "yarn@4.9.2"
 }
