@@ -38,7 +38,7 @@
     "commander": "^14.0.2",
     "js-yaml": "^4.1.0",
     "npm-package-arg": "^13.0.1",
-    "npm-registry-fetch": "^19.0.0",
+    "npm-registry-fetch": "^19.1.0",
     "picomatch": "^4.0.3"
   },
   "devDependencies": {
@@ -49,7 +49,7 @@
     "@sapphire/prettier-config": "^2.0.0",
     "@sapphire/ts-config": "^5.0.1",
     "@types/js-yaml": "^4.0.9",
-    "@types/node": "^22.18.12",
+    "@types/node": "^22.18.13",
     "@types/node-fetch": "^2.6.13",
     "@types/npm-package-arg": "^6.1.4",
     "@types/npm-registry-fetch": "^8.0.9",
