@@ -47,7 +47,7 @@
     "@favware/cliff-jumper": "^6.0.0",
     "@sapphire/eslint-config": "^5.0.6",
     "@sapphire/prettier-config": "^2.0.0",
-    "@sapphire/ts-config": "^5.0.2",
+    "@sapphire/ts-config": "^5.0.3",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^24.10.1",
     "@types/node-fetch": "^2.6.13",
@@ -61,7 +61,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
     "lint-staged": "^16.2.7",
-    "prettier": "^3.6.2",
+    "prettier": "^3.7.3",
     "typescript": "^5.6.3"
   },
   "resolutions": {
@@ -100,5 +100,5 @@
   "eslintConfig": {
     "extends": "@sapphire"
   },
-  "packageManager": "yarn@4.11.0"
+  "packageManager": "yarn@4.12.0"
 }
