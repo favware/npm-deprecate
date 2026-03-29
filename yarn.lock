@@ -372,7 +372,7 @@ __metadata:
     lint-staged: "npm:^16.4.0"
     npm-package-arg: "npm:^13.0.2"
     npm-registry-fetch: "npm:^19.1.1"
-    picomatch: "npm:^4.0.3"
+    picomatch: "npm:^4.0.4"
     prettier: "npm:^3.8.1"
     typescript: "npm:^5.6.3"
   bin:
@@ -3504,7 +3504,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"picomatch@npm:^4.0.3":
+"picomatch@npm:^4.0.3, picomatch@npm:^4.0.4":
   version: 4.0.4
   resolution: "picomatch@npm:4.0.4"
   checksum: 10/f6ef80a3590827ce20378ae110ac78209cc4f74d39236370f1780f957b7ee41c12acde0e4651b90f39983506fd2f5e449994716f516db2e9752924aff8de93ce
