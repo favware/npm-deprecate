@@ -373,7 +373,7 @@ __metadata:
     npm-package-arg: "npm:^13.0.2"
     npm-registry-fetch: "npm:^19.1.1"
     picomatch: "npm:^4.0.4"
-    prettier: "npm:^3.8.1"
+    prettier: "npm:^3.8.2"
     typescript: "npm:^5.6.3"
   bin:
     nd: ./dist/cli.js
@@ -3527,12 +3527,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.0.0, prettier@npm:^3.5.3, prettier@npm:^3.8.1":
-  version: 3.8.1
-  resolution: "prettier@npm:3.8.1"
+"prettier@npm:^3.0.0, prettier@npm:^3.5.3, prettier@npm:^3.8.2":
+  version: 3.8.2
+  resolution: "prettier@npm:3.8.2"
   bin:
     prettier: bin/prettier.cjs
-  checksum: 10/3da1cf8c1ef9bea828aa618553696c312e951f810bee368f6887109b203f18ee869fe88f66e65f9cf60b7cb1f2eae859892c860a300c062ff8ec69c381fc8dbd
+  checksum: 10/fd784175bc600c07eb2c44d7ec4ee7133f95f26492adad61b6a15c06f438b858181faf096ab74163d7f49500ad80cff4479c6abb084e161a2e85a9df5974ecd1
   languageName: node
   linkType: hard
 
