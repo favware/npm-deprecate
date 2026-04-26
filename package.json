@@ -42,7 +42,7 @@
     "picomatch": "^4.0.4"
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.5.0",
+    "@commitlint/cli": "^20.5.2",
     "@commitlint/config-conventional": "^20.5.0",
     "@favware/cliff-jumper": "^6.1.0",
     "@sapphire/eslint-config": "^5.0.6",
